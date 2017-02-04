@@ -1,1 +1,0 @@
-# shukerov.github.io
