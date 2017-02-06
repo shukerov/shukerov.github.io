@@ -13,3 +13,23 @@ header{
   background-color: #eee;
   padding: 20px 0; 
 }
+
+.post{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffcc;
+}
+
+h1{
+
+}
+
+.navigation{
+	max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+::selection {
+    background: #ffb7b7;
+  }

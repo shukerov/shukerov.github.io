@@ -46,3 +46,22 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+# enabling redcarpet as markdown parser
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
+
+# activate live reloading on save
+activate :livereload
+
+
+# custom renderer using redcarpet to parse markdown files
+# class CustomMarkdown < Redcarpet::Render::HTML
+# 	def initialize(options={})
+# 		super options.merge(
+# 			:with_toc_data => true,
+# 		)
+# 	end
+# end
+
+
