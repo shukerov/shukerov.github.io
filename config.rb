@@ -54,14 +54,37 @@ set :markdown, fenced_code_blocks: true
 # activate live reloading on save
 activate :livereload
 
-
-# custom renderer using redcarpet to parse markdown files
-# class CustomMarkdown < Redcarpet::Render::HTML
-# 	def initialize(options={})
-# 		super options.merge(
-# 			:with_toc_data => true,
-# 		)
-# 	end
+# # activate blog
+# activate :blog do |blog|
+#   # set options on blog
+#   # relative path for new blogs via cmdl
+#   #blog.new_article_template
+#   blog.prefix = "posts"
+#   blog.sources = "test.html.markdown"
 # end
 
-
+activate:blog do |blog|
+  
+  # This will add a prefix to all links, template references and source paths
+  blog.prefix = "blog"
+  blog.permalink = "{year}/{month}/{day}/{title}.html"
+  
+  # Matcher for blog source files
+  blog.sources = "articles/{year}-{month}-{day}-{title}.html"
+  blog.taglink = "tags/{tag}.html"
+  blog.layout = "layouts/blog"
+  # blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
+  # blog.year_link = “{year}.html"
+  # blog.month_link = “{year}/{month}.html"
+  # blog.day_link = “{year}/{month}/{day}.html"
+  blog.default_extension = ".markdown"
+  blog.new_article_template = "layouts/post"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+  
+  # Enable pagination
+  # blog.paginate = true
+  # blog.per_page = 10
+  # blog.page_link = "page/{num}"
+end
