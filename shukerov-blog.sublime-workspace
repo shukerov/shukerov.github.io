@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"fon",
+				"font-style: "
+			],
+			[
+				"font",
+				"font-size: "
+			],
+			[
 				"param",
 				"params"
 			],
@@ -300,26 +308,37 @@
 	"buffers":
 	[
 		{
-			"file": "build/index.html",
+			"file": "source/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 3166,
+				"buffer_size": 143,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "build/stylesheets/site.css",
+			"file": "source/javascripts/all.js",
 			"settings":
 			{
-				"buffer_size": 7982,
+				"buffer_size": 582,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config.rb",
+			"file": "source/layouts/layout.erb",
 			"settings":
 			{
-				"buffer_size": 2228,
+				"buffer_size": 735,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/site.css.scss",
+			"settings":
+			{
+				"buffer_size": 285,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -382,12 +401,19 @@
 	"expanded_folders":
 	[
 		"/media/development/shukerov.github.io",
-		"/media/development/shukerov.github.io/build",
-		"/media/development/shukerov.github.io/build/stylesheets"
+		"/media/development/shukerov.github.io/source",
+		"/media/development/shukerov.github.io/source/javascripts",
+		"/media/development/shukerov.github.io/source/layouts"
 	],
 	"file_history":
 	[
 		"/media/development/shukerov.github.io/Gemfile",
+		"/media/development/shukerov.github.io/config.rb",
+		"/media/development/shukerov.github.io/build/index.html",
+		"/media/development/shukerov.github.io/source/about.html.erb",
+		"/media/development/shukerov.github.io/build/stylesheets/site.css",
+		"/media/development/shukerov.github.io/posts/test.html.markdown",
+		"/media/development/shukerov.github.io/build/contact.html",
 		"/media/development/shukerov.github.io/build/about.html",
 		"/media/development/maze_shelf/first_try.py",
 		"/media/development/maze_shelf/webcontrol/app/controllers/led_controller.rb",
@@ -508,17 +534,11 @@
 		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/show.html.erb",
 		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/_table.erb",
 		"/media/development/beesbot/northwesthealth1/test/models/material_test.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/pesticides_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/batches/show.html.erb",
-		"/home/shuk/development/beesbot/northwesthealth1/lib/elastic/elastic_batch_util.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/new.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/pesticides/_form.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/materials/assoc_material_pesticide_new.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/pesticides/new.html.erb"
+		"/media/development/beesbot/northwesthealth1/app/controllers/admin/pesticides_controller.rb"
 	],
 	"find":
 	{
-		"height": 45.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -543,6 +563,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"outputed",
 			"params[:state]",
 			"commands_to_run",
 			"color_string",
@@ -669,8 +690,7 @@
 			"@order_items",
 			"OrderItem",
 			"quantity_remaining",
-			"whack_seed_stage",
-			"keyword"
+			"whack_seed_stage"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -701,61 +721,60 @@
 			[
 				{
 					"buffer": 0,
-					"file": "build/index.html",
+					"file": "source/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3166,
+						"buffer_size": 143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								36,
-								546
+								143,
+								143
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "build/stylesheets/site.css",
+					"file": "source/javascripts/all.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7982,
+						"buffer_size": 582,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4215,
-								4215
+								188,
+								188
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 12302.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -763,33 +782,68 @@
 				},
 				{
 					"buffer": 2,
-					"file": "config.rb",
+					"file": "source/layouts/layout.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2228,
+						"buffer_size": 735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								854,
-								854
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 210.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "source/stylesheets/site.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -797,7 +851,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 45.0
+		"height": 41.0
 	},
 	"input":
 	{
@@ -812,11 +866,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -838,7 +899,7 @@
 	"project": "shukerov-blog.sublime-project",
 	"replace":
 	{
-		"height": 86.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1370,7 +1431,7 @@
 		[
 			[
 				"",
-				"/media/development/taylorshukerov.github.io/taylorshukerov.sublime-project"
+				"/media/development/beesbot/northwesthealth1/nwh.sublime-project"
 			]
 		],
 		"width": 950.0
@@ -1384,7 +1445,7 @@
 		],
 		"width": 1241.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1392,7 +1453,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 879.0,
+	"side_bar_width": 703.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

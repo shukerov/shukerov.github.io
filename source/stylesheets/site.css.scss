@@ -4,5 +4,25 @@
 
 body {
 	background-color: black;
+	font-family: "Hermit", Roboto;
 	color: #0fc115;
+}
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.75em;
+}
+
+.container {
+	padding: 1rem;
+}
+
+@font-face {
+    font-family: "Hermit";
+    src: url(/fonts/Hermit-Regular.woff2) format("woff");
 }
