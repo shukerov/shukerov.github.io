@@ -17,6 +17,3 @@ gem 'redcarpet', '>= 2.3.0'
 
 # Live reloading
 gem 'middleman-livereload'
-
-# blogging
-gem "middleman-blog"

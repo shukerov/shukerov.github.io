@@ -2,59 +2,7 @@
 @import "normalize";
 
 
-.container{
-  max-width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 5px;
-}
-
-header{
-  color: black;
-  padding: 2px 0;
-  background-color: #5a3b2b;
-}
-
-.post{
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "Source Sans Pro";
-
-	h1 {
-		
-	}
-}
-
-/* NAVBAR STYLING */
-#navigation{
-	max-width: 1080px;
-	padding-bottom: 60px;  
-	text-align: center;
-  
-  ul {
- 		list-style-type: none;
- 		width: 70%;
- 		padding: 0;
- 		margin-left: auto;
-
- 	}
-
- 	li {
-		display: inline-block; 
- 	}
-
-  a { 		
- 		color: black;
- 		padding: 14px 16px;
- 		text-decoration: none;
- 		font-family: "Source Sans Pro";
- 	}
-
- 	a:hover {
- 		background-color: #5a3929;
- 	} 	
-}
-
-::selection {
-    background: #5a3929;
+body {
+	background-color: black;
+	color: #0fc115;
 }

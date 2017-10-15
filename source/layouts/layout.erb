@@ -9,25 +9,12 @@
     <title><%= current_page.data.title || "Stoyan Shukerov" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
-    
-    <header>
-      <div class="container"></div>
-    </header>
-    
-    <div id="navigation">
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="about.html">about</a></li>
-      </ul>
-    </div>
-
     <%= yield %>
     <div id="footer">2017 Shukerov</div>
   </body>
