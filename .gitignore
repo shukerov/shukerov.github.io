@@ -19,4 +19,5 @@
 
 # ignore bundle
 /vendor
-*.sublime*
+
+/*.sublime*

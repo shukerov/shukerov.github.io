@@ -11,9 +11,14 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+gem "middleman-blog", '~> 4.0'
+gem "middleman-syntax"
 
 # Redcarpet
 gem 'redcarpet', '>= 2.3.0'
+
+# Nokogiri for article summaries
+gem 'nokogiri'
 
 # Live reloading
 gem 'middleman-livereload'

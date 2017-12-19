@@ -1,5 +1,13 @@
 <div class="container">
-	<p class="prompt">
-	    <span>user@user-pc:~$ </span><span id="caption"></span><span id="cursor">❚</span>
-	</p>
+	<% blog.articles.each do |article| %>
+	  <article>
+			<h1>
+				<a href="<%= article.url %>"><%= article.title %></a>
+				<time><%= article.date.strftime('%b %e %Y') %></time>
+			</h1>
+			    <%= article.summary %>
+
+	    <a href="<%= article.url %>">Read more</a>
+  	</article>
+	<% end %>
 </div>
