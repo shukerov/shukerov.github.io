@@ -3,11 +3,17 @@
 @import "highlighting";
 
 
-// body {
-// 	background-color: black;
-// 	font-family: "Hermit", Roboto;
-// 	color: #0fc115;
-// }
+.timeline {
+	max-width: 780px;
+	margin: 0 auto;
+}
+
+body {
+	padding: 0 6vw;
+	font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+	//font-family: "Hermit", Roboto;
+	//color: #0fc115;
+}
 
 // #footer {
 //   position: absolute;

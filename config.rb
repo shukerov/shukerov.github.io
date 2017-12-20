@@ -23,6 +23,7 @@ activate :syntax, :line_numbers => true
 # activating blogs
 activate :blog do |blog|
   blog.prefix = "blog"
+  blog.layout = "article_layout"
 end
 
 # Build-specific configuration
