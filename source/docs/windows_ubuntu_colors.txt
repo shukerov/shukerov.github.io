@@ -1,0 +1,16 @@
+Slot1: 	R: 7	G: 54	B: 66
+Slot2: 	R: 38	G: 139	B: 210
+Slot3: 	R: 133	G: 53 	B: 0
+Slot4: 	R: 42 	G: 161 	B: 152
+Slot5: 	R: 220	G: 50	B: 47
+Slot6: 	R: 211	G: 54	B: 130
+Slot7: 	R: 181 	G: 137	B: 0
+Slot8: 	R: 238	G: 232	B: 213 
+Slot9: 	R: 0 	G: 43	B: 54 
+Slot10: R: 131	G: 148 	B: 150
+Slot11: R: 88	G: 110	B: 117
+Slot12: R: 147	G: 161	B: 161
+Slot13: R: 203	G: 75 	B: 22
+Slot14: R: 108 	G: 113  B: 196
+Slot15: R: 101 	G: 123	B: 131
+Slot16: R: 253	G: 246	B: 227

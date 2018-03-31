@@ -9,14 +9,21 @@ Here is some more words to make the summary nice and cool.
 
 Below we have some examples of syntax highlighting for python and ruby:
 
+Python:
+
 ```python
 	s = "python syntax highlighting test"
 	print(s)
 	print("Test was succesful!")
 ```
 
+Ruby:
+
 ```ruby
 	def my_cool_method(message)
 	  puts message
 	end
 ```
+
+This is an image test:
+![Test Image](test.png)

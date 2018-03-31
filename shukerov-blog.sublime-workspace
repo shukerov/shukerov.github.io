@@ -308,29 +308,35 @@
 	"buffers":
 	[
 		{
+			"file": "source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
+			"settings":
+			{
+				"buffer_size": 3047,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "source/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 143,
-				"encoding": "UTF-8",
+				"buffer_size": 306,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/javascripts/all.js",
+			"file": "config.rb",
 			"settings":
 			{
-				"buffer_size": 582,
-				"encoding": "UTF-8",
+				"buffer_size": 991,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/layouts/layout.erb",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 735,
-				"encoding": "UTF-8",
+				"buffer_size": 619,
 				"line_ending": "Unix"
 			}
 		},
@@ -338,8 +344,15 @@
 			"file": "source/stylesheets/site.css.scss",
 			"settings":
 			{
-				"buffer_size": 285,
-				"encoding": "UTF-8",
+				"buffer_size": 1009,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/blog/2017-12-19-middleman.html.markdown",
+			"settings":
+			{
+				"buffer_size": 670,
 				"line_ending": "Unix"
 			}
 		}
@@ -351,10 +364,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 884.0,
-		"last_filter": "",
+		"height": 515.0,
+		"last_filter": "settings",
 		"selected_items":
 		[
+			[
+				"settings",
+				"Preferences: Settings"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -380,7 +397,7 @@
 				"Snippet: stylesheet_link_tag"
 			]
 		],
-		"width": 1052.0
+		"width": 1346.0
 	},
 	"console":
 	{
@@ -400,18 +417,56 @@
 	},
 	"expanded_folders":
 	[
-		"/media/development/shukerov.github.io",
-		"/media/development/shukerov.github.io/source",
-		"/media/development/shukerov.github.io/source/javascripts",
-		"/media/development/shukerov.github.io/source/layouts"
+		"/S/development/shukerov.github.io",
+		"/S/development/shukerov.github.io/.bundle",
+		"/S/development/shukerov.github.io/source"
 	],
 	"file_history":
 	[
-		"/media/development/shukerov.github.io/Gemfile",
+		"/S/development/shukerov.github.io/config.ru",
+		"/S/CalPoly/GE/PHIL/philletcure.txt",
+		"/S/development/shukerov.github.io/Gemfile",
+		"/S/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
+		"/S/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
+		"/S/development/shukerov.github.io/source/blog/2017-12-20-rubik-s-cube.html.markdown",
+		"/S/development/shukerov.github.io/source/layouts/layout.erb",
+		"/C/Users/shukerov/Desktop/2018-03-22-ruby-development-windows-10.html.markdown",
+		"/C/Users/shukerov/Desktop/2018-03-23-middleman-windows-10.html.markdown",
+		"/S/development/shukerov.github.io/Gemfile.lock",
+		"/S/development/shukerov.github.io/.gitignore",
+		"/S/development/shukerov.github.io/source/index.html.erb",
+		"/S/development/shukerov.github.io/source/about_me.html.erb",
+		"/S/development/beesbot/northwesthealth1/.ruby-version",
+		"/S/development/shortcuts.txt",
+		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/extensions/x86_64-linux/2.5.0-static/nokogiri-1.8.1/gem_make.out",
+		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/extensions/x86_64-linux/2.5.0-static/nokogiri-1.8.1/mkmf.log",
+		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.c",
+		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.c",
+		"/S/development/shukerov.github.io/source/projects.html.erb",
+		"/S/development/shukerov.github.io/source/stylesheets/site.css.scss",
+		"/media/development/shukerov.github.io/build/stylesheets/site.css",
+		"/media/development/shukerov.github.io/source/stylesheets/site.css.scss",
+		"/media/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
+		"/media/development/shukerov.github.io/source/layouts/article_layout.erb",
 		"/media/development/shukerov.github.io/config.rb",
+		"/media/development/shukerov.github.io/source/blog/2017-12-20-rubik-s-cube.html.markdown",
+		"/media/development/shukerov.github.io/source/index.html.erb",
+		"/media/development/shukerov.github.io/source/layouts/layout.erb",
+		"/media/development/shukerov.github.io/.gitignore",
+		"/media/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
+		"/media/development/shukerov.github.io/Gemfile",
+		"/media/development/shukerov.github.io/source/stylesheets/highlighting.css.erb",
+		"/media/development/shukerov.github.io/.sass-cache/e390b2696975081b06ac4557c732e8d6c47ea063/_normalize.scssc",
+		"/media/development/shukerov.github.io/.sass-cache/e390b2696975081b06ac4557c732e8d6c47ea063/site.css.scssc",
+		"/media/development/shukerov.github.io/config.ru",
+		"/media/development/shukerov.github.io/README.MD",
+		"/media/development/shukerov.github.io/source/javascripts/all.js",
+		"/media/development/shukerov.github.io/source/posts/test.html.erb",
+		"/media/development/shukerov.github.io/source/posts/test.html.markdown.markdown",
+		"/media/development/shukerov.github.io/build/posts/test.html",
+		"/media/development/shukerov.github.io/source/contact.html.erb",
 		"/media/development/shukerov.github.io/build/index.html",
 		"/media/development/shukerov.github.io/source/about.html.erb",
-		"/media/development/shukerov.github.io/build/stylesheets/site.css",
 		"/media/development/shukerov.github.io/posts/test.html.markdown",
 		"/media/development/shukerov.github.io/build/contact.html",
 		"/media/development/shukerov.github.io/build/about.html",
@@ -495,50 +550,11 @@
 		"/media/development/beesbot/northwesthealth1/app/models/admin/customer.rb",
 		"/media/development/beesbot/northwesthealth1/app/views/admin/customers/show.html.erb",
 		"/media/development/beesbot/northwesthealth1/app/views/admin/customers/_table.erb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/bulk_items_controller.rb",
-		"/media/development/beesbot/northwesthealth1/lib/elastic/elastic_container_util.rb",
-		"/media/development/beesbot/northwesthealth1/lib/tasks/add_reported_value_to_pesticides.rake",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/vacuum_complete.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/run.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/vacuum_completes_controller.rb",
-		"/home/shuk/development/beesbot/northwesthealth1/app/controllers/admin/materials_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/extract_details_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/layouts/full.json.jbuilder",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/convection.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/convections_controller.rb",
-		"/media/development/beesbot/northwesthealth1/lib/ext/csv.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/materials_pesticide.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/extract_details_pesticide.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/runs_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/concerns/elastic_index_sync.rb",
-		"/media/development/beesbot/northwesthealth1/lib/elastic/elastic_util.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/reports/company_summary.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/extract_details/_form.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/orders_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/batch.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/material.rb",
-		"/media/development/beesbot/northwesthealth1/test/fixtures/materials.yml",
-		"/media/development/beesbot/northwesthealth1/test/controllers/materials_controller_test.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/materials/_table.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/extract_details/_table.erb",
-		"/media/development/beesbot/northwesthealth1/db/migrate/20170503040421_add_lab_results_to_materials.rb",
-		"/media/development/beesbot/northwesthealth1/test/controllers/extract_details_controller_test.rb",
-		"/media/development/beesbot/northwesthealth1/db/migrate/20160505054219_create_extract_details.rb",
-		"/media/development/beesbot/northwesthealth1/lib/elastic/elastic_batch_util.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/pesticide.rb",
-		"/media/development/beesbot/northwesthealth1/test/models/extract_detail_test.rb",
-		"/media/development/beesbot/northwesthealth1/test/fixtures/pesticides.yml",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/materials/index.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/materials/show.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/index.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/show.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/material_journal_entries/_table.erb",
-		"/media/development/beesbot/northwesthealth1/test/models/material_test.rb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/pesticides_controller.rb"
+		"/media/development/beesbot/northwesthealth1/app/controllers/admin/bulk_items_controller.rb"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 58.0
 	},
 	"find_in_files":
 	{
@@ -563,6 +579,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"```",
+			"`",
+			"blog",
+			"'\n",
 			"outputed",
 			"params[:state]",
 			"commands_to_run",
@@ -686,11 +706,7 @@
 			"tbl_style",
 			"2",
 			"bower",
-			"taylor",
-			"@order_items",
-			"OrderItem",
-			"quantity_remaining",
-			"whack_seed_stage"
+			"taylor"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -716,62 +732,77 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/index.html.erb",
+					"file": "source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 143,
+						"buffer_size": 3047,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								143,
-								143
+								3047,
+								3047
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 457,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "source/javascripts/all.js",
+					"file": "source/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 582,
+						"buffer_size": 306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								188,
-								188
+								51,
+								58
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 8,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -782,11 +813,11 @@
 				},
 				{
 					"buffer": 2,
-					"file": "source/layouts/layout.erb",
+					"file": "config.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 735,
+						"buffer_size": 991,
 						"regions":
 						{
 						},
@@ -799,8 +830,86 @@
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 91,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								440
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 70,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/stylesheets/site.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -808,42 +917,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "source/stylesheets/site.css.scss",
+					"buffer": 5,
+					"file": "source/blog/2017-12-19-middleman.html.markdown",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 285,
+						"buffer_size": 670,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								568,
+								561
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 93.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -851,11 +954,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 41.0
+		"height": 58.0
 	},
 	"input":
 	{
-		"height": 114.0
+		"height": 129.0
 	},
 	"layout":
 	{
@@ -866,18 +969,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -899,7 +995,7 @@
 	"project": "shukerov-blog.sublime-project",
 	"replace":
 	{
-		"height": 78.0
+		"height": 108.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -909,12 +1005,20 @@
 		"selected_items":
 		[
 			[
-				"config",
-				"config.rb"
+				"styleshets/",
+				"build/stylesheets/site.css"
 			],
 			[
 				"gemfile",
 				"Gemfile"
+			],
+			[
+				"gemfi",
+				"Gemfile"
+			],
+			[
+				"config",
+				"config.rb"
 			],
 			[
 				"first",
@@ -1411,14 +1515,6 @@
 			[
 				"order_item",
 				"app/models/order_item.rb"
-			],
-			[
-				"extract_detailscontroller",
-				"app/controllers/admin/extract_details_controller.rb"
-			],
-			[
-				"batch_controller",
-				"app/controllers/admin/batches_controller.rb"
 			]
 		],
 		"width": 0.0
@@ -1431,7 +1527,7 @@
 		[
 			[
 				"",
-				"/media/development/beesbot/northwesthealth1/nwh.sublime-project"
+				"S:\\development\\shukerov.github.io\\shukerov-blog.sublime-project"
 			]
 		],
 		"width": 950.0
@@ -1445,7 +1541,7 @@
 		],
 		"width": 1241.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
@@ -1453,7 +1549,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 703.0,
+	"side_bar_width": 533.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
