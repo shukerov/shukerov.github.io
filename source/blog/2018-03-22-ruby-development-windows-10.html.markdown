@@ -16,38 +16,40 @@ linked above (I found it quite interesting).* (edit this a bit)
 
 First we will install some dependencies for ruby (and ruby on rails):
 
-```
-sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+```bash
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev
+libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev
+python-software-properties libffi-dev
 ```
 
 Clone the repo provided above in your home directory by running the command below:
 
-```
+```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
 DIRECTLY FROM REPO: Optionally, try to compile dynamic bash extension to speed up rbenv. Don't worry if it fails; rbenv will still work normally:
 
-```
+```bash
 cd ~/.rbenv && src/configure && make -C src
 ```
 
 Next we will add the rbenv folder to the $PATH variable of the system. Note that I am using .mybashrc, depending on your setup you might want to echo it in your .bashrc or .bash_profile.
 
-```
+```bash
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.mybashrc
 echo 'val "$(rbenv init -)"' >> ~/.mybashrc
 ```
 
 Restart you shell to reaload .bashrc
 
-```
+```bash
 exec $SHELL
 ```
 
 Next we will install the ruby build plugin that is recommended with rbenv. This will let us easily install new ruby versions:
 
-```
+```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.mybashrc
 exec $SHELL
@@ -55,25 +57,25 @@ exec $SHELL
 
 Finally we will install the ruby version, at the time of writing the most stable release is ruby 2.5.0:
 
-```
+```bash
 rbenv install 2.5.0
 ```
 
 Set the system wide version of ruby by running the following command:
 
-```
+```bash
 rbenv global 2.5.0
 ```
 
 Check if everything went smoothly. If it did then the next command should yield 2.5.0
 
-```
+```bash
 ruby -v
 ```
 
 Install some global gems that we will need
 
-```
+```bash
 gem install bundler
 gem install middleman
 gem install rails
@@ -81,6 +83,6 @@ gem install rails
 
 To "activate" new gems run:
 
-```
+```bash
 rbenv rehash
 ```

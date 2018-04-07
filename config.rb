@@ -18,7 +18,7 @@ end
 # markdown and syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
-activate :syntax, :line_numbers => true
+activate :syntax
 
 # activating blogs
 activate :blog do |blog|

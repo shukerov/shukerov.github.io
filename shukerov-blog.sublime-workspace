@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-color"
+			],
+			[
 				"fon",
 				"font-style: "
 			],
@@ -308,51 +312,38 @@
 	"buffers":
 	[
 		{
-			"file": "source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
+			"file": "source/stylesheets/site.css.scss",
 			"settings":
 			{
-				"buffer_size": 3047,
+				"buffer_size": 857,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/layouts/layout.erb",
+			"settings":
+			{
+				"buffer_size": 1322,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "source/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 306,
-				"line_ending": "Unix"
+				"buffer_size": 451,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config.rb",
+			"file": "source/stylesheets/_highlighting.scss",
 			"settings":
 			{
-				"buffer_size": 991,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 619,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/site.css.scss",
-			"settings":
-			{
-				"buffer_size": 1009,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/blog/2017-12-19-middleman.html.markdown",
-			"settings":
-			{
-				"buffer_size": 670,
+				"buffer_size": 4028,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -418,23 +409,29 @@
 	"expanded_folders":
 	[
 		"/S/development/shukerov.github.io",
-		"/S/development/shukerov.github.io/.bundle",
-		"/S/development/shukerov.github.io/source"
+		"/S/development/shukerov.github.io/build",
+		"/S/development/shukerov.github.io/source",
+		"/S/development/shukerov.github.io/source/layouts"
 	],
 	"file_history":
 	[
-		"/S/development/shukerov.github.io/config.ru",
-		"/S/CalPoly/GE/PHIL/philletcure.txt",
-		"/S/development/shukerov.github.io/Gemfile",
-		"/S/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
-		"/S/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
-		"/S/development/shukerov.github.io/source/blog/2017-12-20-rubik-s-cube.html.markdown",
 		"/S/development/shukerov.github.io/source/layouts/layout.erb",
+		"/S/development/shukerov.github.io/config.rb",
+		"/S/development/shukerov.github.io/Gemfile",
+		"/S/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
+		"/S/development/shukerov.github.io/source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
+		"/S/development/shukerov.github.io/config.ru",
+		"/S/development/shukerov.github.io/source/index.html.erb",
+		"/S/development/shukerov.github.io/build/stylesheets/site.css",
+		"/S/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
+		"/S/development/shukerov.github.io/source/layouts/article_layout.erb",
+		"/S/development/shukerov.github.io/source/stylesheets/site.css.scss",
+		"/S/development/shukerov.github.io/source/blog/2017-12-20-rubik-s-cube.html.markdown",
+		"/S/CalPoly/GE/PHIL/philletcure.txt",
 		"/C/Users/shukerov/Desktop/2018-03-22-ruby-development-windows-10.html.markdown",
 		"/C/Users/shukerov/Desktop/2018-03-23-middleman-windows-10.html.markdown",
 		"/S/development/shukerov.github.io/Gemfile.lock",
 		"/S/development/shukerov.github.io/.gitignore",
-		"/S/development/shukerov.github.io/source/index.html.erb",
 		"/S/development/shukerov.github.io/source/about_me.html.erb",
 		"/S/development/beesbot/northwesthealth1/.ruby-version",
 		"/S/development/shortcuts.txt",
@@ -443,7 +440,6 @@
 		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.c",
 		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.c",
 		"/S/development/shukerov.github.io/source/projects.html.erb",
-		"/S/development/shukerov.github.io/source/stylesheets/site.css.scss",
 		"/media/development/shukerov.github.io/build/stylesheets/site.css",
 		"/media/development/shukerov.github.io/source/stylesheets/site.css.scss",
 		"/media/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
@@ -546,15 +542,11 @@
 		"/media/development/beesbot/northwesthealth1/app/models/admin/extract.rb",
 		"/media/development/beesbot/northwesthealth1/test/controllers/extracts_controller_test.rb",
 		"/media/development/beesbot/northwesthealth1/app/assets/bower_components/tooltipster/README.md",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/customers_controller.rb",
-		"/media/development/beesbot/northwesthealth1/app/models/admin/customer.rb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/customers/show.html.erb",
-		"/media/development/beesbot/northwesthealth1/app/views/admin/customers/_table.erb",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/bulk_items_controller.rb"
+		"/media/development/beesbot/northwesthealth1/app/controllers/admin/customers_controller.rb"
 	],
 	"find":
 	{
-		"height": 58.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
@@ -579,6 +571,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"//",
+			"btn",
 			"```",
 			"`",
 			"blog",
@@ -704,9 +698,7 @@
 			"container",
 			"order_items",
 			"tbl_style",
-			"2",
-			"bower",
-			"taylor"
+			"2"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -732,24 +724,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
+					"file": "source/stylesheets/site.css.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3047,
+						"buffer_size": 857,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3047,
-								3047
+								461,
+								461
 							]
 						],
 						"settings":
@@ -757,45 +749,87 @@
 							"WordCount":
 							{
 								"changes": 0,
-								"count": 457,
+								"count": 97,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "css"
+							},
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 648.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/layouts/layout.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1322,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1097,
+								1097
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 24,
+								"count": 52,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "source/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 306,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								51,
-								58
+								451,
+								451
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 0,
-								"count": 8,
+								"changes": 628,
+								"count": 59,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -808,145 +842,45 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 991,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 91,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 600.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 619,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								456,
-								440
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 70,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "source/stylesheets/site.css.scss",
+					"buffer": 3,
+					"file": "source/stylesheets/_highlighting.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1009,
+						"buffer_size": 4028,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								456,
-								456
+								152,
+								152
 							]
 						],
 						"settings":
 						{
+							"WordCount":
+							{
+								"changes": 3,
+								"count": 293,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "css"
+							},
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "source/blog/2017-12-19-middleman.html.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 670,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								561
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -954,7 +888,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 58.0
+		"height": 50.0
 	},
 	"input":
 	{
@@ -991,11 +925,15 @@
 	{
 		"height": 0.0
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
 	"pinned_build_system": "",
 	"project": "shukerov-blog.sublime-project",
 	"replace":
 	{
-		"height": 108.0
+		"height": 94.0
 	},
 	"save_all_on_build": true,
 	"select_file":
