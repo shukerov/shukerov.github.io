@@ -11,8 +11,8 @@ activate :livereload
 activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.build_before = true
-  deploy.branch   = "master"
-  deploy.remote   = "git@github.com:shukerov/shukerov.github.io.git"
+  deploy.branch = "master"
+  deploy.remote = "git@github.com:shukerov/shukerov.github.io.git"
 end
 
 # markdown and syntax highlighting
@@ -34,14 +34,3 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 end
-
-#########
-# Helpers
-#########
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-

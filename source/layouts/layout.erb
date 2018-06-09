@@ -4,7 +4,6 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Stoyan Shukerov" %></title>
 
@@ -23,12 +22,11 @@
     <%= javascript_include_tag :all %>
   </head>
   <div class="container">
-    <a href="/" class="logo">stoyanshukerov</a>
-    <nav>
+    <div id="nav">
       <a href="/" class="menu">Home</a>
       <a href="/blog" class="menu">Blog</a>
       <a href="/projects" class="menu">Projects</a>
-    </nav>
+    </div>
   </div>
   <body>
     <%= yield %>

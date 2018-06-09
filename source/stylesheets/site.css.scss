@@ -30,17 +30,24 @@ a:hover {
 }
 
 body {
+  color: #657b83;
   background-color: #fdf6e3;
 	font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-nav {
+#nav {
   align-items: center;
+  display: block;
+  text-align: center;
+  a {
+    margin: 1em;
+    display: inline-block;
+  }
 }
 
-.logo {
+#logo {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 // #footer {

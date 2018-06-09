@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-align"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -311,42 +315,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "source/stylesheets/site.css.scss",
-			"settings":
-			{
-				"buffer_size": 857,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/layouts/layout.erb",
-			"settings":
-			{
-				"buffer_size": 1322,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 451,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "source/stylesheets/_highlighting.scss",
-			"settings":
-			{
-				"buffer_size": 4028,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -409,28 +377,29 @@
 	"expanded_folders":
 	[
 		"/S/development/shukerov.github.io",
-		"/S/development/shukerov.github.io/build",
-		"/S/development/shukerov.github.io/source",
-		"/S/development/shukerov.github.io/source/layouts"
+		"/S/development/shukerov.github.io/source"
 	],
 	"file_history":
 	[
-		"/S/development/shukerov.github.io/source/layouts/layout.erb",
-		"/S/development/shukerov.github.io/config.rb",
 		"/S/development/shukerov.github.io/Gemfile",
+		"/S/development/shukerov.github.io/source/projects.html.erb",
+		"/S/development/shukerov.github.io/Gemfile.lock",
+		"/S/CalPoly/CS/464/Study guide answers.txt",
+		"/S/development/shukerov.github.io/source/stylesheets/site.css.scss",
+		"/S/development/shukerov.github.io/config.rb",
+		"/S/development/shukerov.github.io/source/index.html.erb",
+		"/S/development/shukerov.github.io/source/docs/windows_ubuntu_colors.txt",
+		"/S/development/shukerov.github.io/source/layouts/layout.erb",
+		"/S/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
 		"/S/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
 		"/S/development/shukerov.github.io/source/blog/2018-03-22-ruby-development-windows-10.html.markdown",
 		"/S/development/shukerov.github.io/config.ru",
-		"/S/development/shukerov.github.io/source/index.html.erb",
 		"/S/development/shukerov.github.io/build/stylesheets/site.css",
-		"/S/development/shukerov.github.io/source/stylesheets/_highlighting.scss",
 		"/S/development/shukerov.github.io/source/layouts/article_layout.erb",
-		"/S/development/shukerov.github.io/source/stylesheets/site.css.scss",
 		"/S/development/shukerov.github.io/source/blog/2017-12-20-rubik-s-cube.html.markdown",
 		"/S/CalPoly/GE/PHIL/philletcure.txt",
 		"/C/Users/shukerov/Desktop/2018-03-22-ruby-development-windows-10.html.markdown",
 		"/C/Users/shukerov/Desktop/2018-03-23-middleman-windows-10.html.markdown",
-		"/S/development/shukerov.github.io/Gemfile.lock",
 		"/S/development/shukerov.github.io/.gitignore",
 		"/S/development/shukerov.github.io/source/about_me.html.erb",
 		"/S/development/beesbot/northwesthealth1/.ruby-version",
@@ -439,7 +408,6 @@
 		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/extensions/x86_64-linux/2.5.0-static/nokogiri-1.8.1/mkmf.log",
 		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.c",
 		"/S/development/shukerov.github.io/vendor/ruby/2.5.0/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.c",
-		"/S/development/shukerov.github.io/source/projects.html.erb",
 		"/media/development/shukerov.github.io/build/stylesheets/site.css",
 		"/media/development/shukerov.github.io/source/stylesheets/site.css.scss",
 		"/media/development/shukerov.github.io/source/blog/2017-12-19-middleman.html.markdown",
@@ -540,13 +508,11 @@
 		"/home/shuk/Desktop/save_me.rb",
 		"/media/development/beesbot/northwesthealth1/test/fixtures/vacuum_completes.yml",
 		"/media/development/beesbot/northwesthealth1/app/models/admin/extract.rb",
-		"/media/development/beesbot/northwesthealth1/test/controllers/extracts_controller_test.rb",
-		"/media/development/beesbot/northwesthealth1/app/assets/bower_components/tooltipster/README.md",
-		"/media/development/beesbot/northwesthealth1/app/controllers/admin/customers_controller.rb"
+		"/media/development/beesbot/northwesthealth1/test/controllers/extracts_controller_test.rb"
 	],
 	"find":
 	{
-		"height": 50.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -571,6 +537,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ruby",
+			".",
+			"e.g.",
+			".",
+			"d.",
+			"c",
+			"c.",
+			"b.",
 			"//",
 			"btn",
 			"```",
@@ -690,15 +664,7 @@
 			"photo",
 			"lab_photo_url",
 			"build_shop_json",
-			"orig_extract_name",
-			"orig_price",
-			"#<OrderItem id:",
-			"tbl",
-			"containers_only",
-			"container",
-			"order_items",
-			"tbl_style",
-			"2"
+			"orig_extract_name"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -724,171 +690,14 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "source/stylesheets/site.css.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 857,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								461,
-								461
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 97,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "css"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "source/layouts/layout.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1322,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1097,
-								1097
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 24,
-								"count": 52,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "source/index.html.erb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 451,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								451,
-								451
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 628,
-								"count": 59,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/stylesheets/_highlighting.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4028,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								152,
-								152
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 3,
-								"count": 293,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "css"
-							},
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 50.0
+		"height": 76.0
 	},
 	"input":
 	{
@@ -933,7 +742,7 @@
 	"project": "shukerov-blog.sublime-project",
 	"replace":
 	{
-		"height": 94.0
+		"height": 143.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1465,7 +1274,7 @@
 		[
 			[
 				"",
-				"S:\\development\\shukerov.github.io\\shukerov-blog.sublime-project"
+				"S:\\CalPoly\\CS\\cs_calpoly.sublime-project"
 			]
 		],
 		"width": 950.0
