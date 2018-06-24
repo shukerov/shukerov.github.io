@@ -27,3 +27,5 @@ end
 
 This is an image test:
 ![Test Image](test.png)
+
+Looks like things seem to work. Note to self: delete this blogpost after you write a few more good ones.

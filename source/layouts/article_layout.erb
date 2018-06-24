@@ -3,6 +3,9 @@
       <div class="article">
    		<%= yield %>
    	</div>
+	<div id="bottom-menu">
+		<a href="#top">Top</a>
+		|
+		<%= link_to 'Back', '/blog.html' %>
    </div>
-	<%= link_to 'Back', '/blog.html' %>
 <% end %>
