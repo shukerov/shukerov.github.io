@@ -29,10 +29,19 @@ a:hover {
   text-decoration: underline;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   color: #657b83;
   background-color: #fdf6e3;
 	font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+} 
+
+#body {
+  padding-bottom: 60px;
 }
 
 #icons {
@@ -68,7 +77,8 @@ body {
 }
 
 .container {
-	height: 100%;
+	min-height: 100%;
+  position: relative;
 }
 
 // @font-face {
