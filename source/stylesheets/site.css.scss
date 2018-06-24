@@ -9,11 +9,21 @@
 	padding: 0 6vw;
 }
 
+.main {
+  max-width: 780px;
+  margin: auto;
+  padding: 6vw;
+
+  p {
+    margin-top: 0;
+  }
+}
+
 .article {
 
-		img {
-		  display: block;
-		}
+	img {
+	  display: block;
+	}
 }
 
 .menu {
@@ -27,6 +37,16 @@ a {
 
 a:hover { 
   text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h3 {
+  opacity: 0.5;
+  font-size: 1em;
+  margin: 0;
 }
 
 html {
@@ -44,11 +64,24 @@ body {
   padding-bottom: 60px;
 }
 
-#icons {
-  width: 5em;
-  height: 6em;
-  margin: auto;
-  display: inline-block; 
+.left-side {
+  width: 30%;
+  float: left;
+}
+
+.right-side {
+  margin-left: 33%;
+}
+
+#content {
+  padding: 30px 0px;
+}
+
+.icon {
+  width: 2.5em;
+  height: 3em;
+  display: inline-block;  
+  margin: 0em 0.5em;
 }
 
 #nav {
@@ -62,12 +95,13 @@ body {
 }
 
 #logo {
+  margin: 0px;
   text-decoration: none;
   font-size: 3em;
 }
 
 #footer {
-   position:absolute;
+   position: absolute;
    bottom:0;
    text-align: center;
    width:100%;
@@ -76,12 +110,40 @@ body {
    color: #9aa8ad;
 }
 
+#profile_pic {
+  width: 220px;
+  height: 300px;
+}
+
+#bottom-menu {
+  max-width: 100px;
+  margin: 10px auto;
+}
+
+#greeting1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
+#greeting2 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #b58900;
+}
+
+#highlight {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
 .container {
 	min-height: 100%;
   position: relative;
 }
 
-// @font-face {
-//     font-family: "Hermit";
-//     src: url(/fonts/Hermit-Regular.woff2) format("woff");
-// }
+@font-face {
+    font-family: "Hermit";
+    src: url(/fonts/Hermit-Regular.woff2) format("woff");
+}
