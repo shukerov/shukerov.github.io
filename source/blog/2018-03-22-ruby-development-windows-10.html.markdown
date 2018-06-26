@@ -1,5 +1,5 @@
 ---
-title: Ruby development Windows 10
+title: Ruby Development Windows 10
 date: 2018/03/22
 tags: bash, windows 10, rbenv, ubuntu, ruby, windows, blog
 ---
