@@ -6,28 +6,26 @@
 .post {
 	max-width: 780px;
 	margin: 0 auto;
-	padding: 0 6vw;
-}
-
-.main {
-  max-width: 780px;
-  margin: auto;
-  padding: 6vw;
-
-  p {
-    margin-top: 0;
-  }
-}
-
-.article {
-
+  padding: 0 40px;
 	img {
 	  display: block;
 	}
 }
 
-.menu {
+.nav_btn {
   color: #b58900;
+}
+
+.icon {
+  width: 2.5em;
+  height: 3em; 
+  margin: 0em 0.5em;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -53,44 +51,29 @@ html {
   height: 100%;
 }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 body {
-  height: 100%;
   color: #657b83;
   background-color: #fdf6e3;
-	font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
 } 
 
-#body {
-  padding-bottom: 60px;
-}
-
-.left-side {
-  width: 30%;
-  float: left;
-}
-
-.right-side {
-  margin-left: 33%;
-}
-
-#content {
-  padding: 30px 0px;
-}
-
-.icon {
-  width: 2.5em;
-  height: 3em;
-  display: inline-block;  
-  margin: 0em 0.5em;
-}
-
 #nav {
-  align-items: center;
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
   a {
-    margin: 1em;
-    display: inline-block;
+    margin: 1.5em 1em;
   }
 }
 
@@ -98,12 +81,12 @@ body {
   margin: 0px;
   text-decoration: none;
   font-size: 3em;
+  text-align: right;
 }
 
 #footer {
-   position: absolute;
-   bottom:0;
-   text-align: center;
+   display: flex;
+   justify-content: center;
    width:100%;
    height:60px;   /* Height of the footer */
    background-color:#657b83;
@@ -138,12 +121,38 @@ body {
   color: #b58900;
 }
 
-.container {
-	min-height: 100%;
-  position: relative;
-}
-
 @font-face {
     font-family: "Hermit";
     src: url(/fonts/Hermit-Regular.woff2) format("woff");
+}
+
+#left {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+}
+
+.wrapper {
+   flex-flow: row wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   height: 100%;
+   margin: auto;
+}
+
+.item {
+  width: 400px;
+  padding: 30px 40px;
+}
+
+@media all and (max-width: 960px) {
+  #left {
+    align-items: center;
+  }
+
+  #logo {
+    text-align: center;
+  }
 }
