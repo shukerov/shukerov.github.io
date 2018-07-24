@@ -13,6 +13,7 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.branch = "master"
   deploy.remote = "git@github.com:shukerov/shukerov.github.io.git"
+  deploy.commit_message = "Delpoying @ #{Time.now}"
 end
 
 # markdown and syntax highlighting
