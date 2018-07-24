@@ -14,7 +14,7 @@ activate :syntax
 
 # activating blogs
 activate :blog do |blog|
-  blog.prefix = "blog"
+  blog.prefix = "/myblog/blog"
   blog.layout = "article_layout"
 end
 
@@ -22,7 +22,7 @@ end
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :relative_assets # Use relative URLs
   set :build_dir, 'public'
   set :base_url, "/myblog" # baseurl for GitLab Pages (project name) - leave empty if you're building a user/group website
-  activate :relative_assets # Use relative URLs
 end
