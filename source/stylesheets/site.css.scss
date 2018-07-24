@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import "normalize";
+@import "highlighting";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.post {
+	max-width: 780px;
+	margin: 0 auto;
+  padding: 0 40px;
+	img {
+	  display: block;
+	}
+}
+
+.nav_btn {
+  color: #b58900;
+}
+
+.icon {
+  width: 2.5em;
+  height: 3em; 
+  margin: 0em 0.5em;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #b58900;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h3 {
+  opacity: 0.5;
+  font-size: 1em;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  color: #657b83;
+  background-color: #fdf6e3;
+  font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+} 
+
+#nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  a {
+    margin: 1.5em 1em;
+  }
+}
+
+#logo {
+  margin: 0px;
+  text-decoration: none;
+  font-size: 3em;
+  text-align: right;
+}
+
+#footer {
+   display: flex;
+   justify-content: center;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color:#657b83;
+   color: #9aa8ad;
+}
+
+#profile_pic {
+  width: 220px;
+  height: 300px;
+}
+
+#bottom-menu {
+  max-width: 100px;
+  margin: 10px auto;
+}
+
+#greeting1 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
+#greeting2 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #b58900;
+}
+
+#highlight {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
+@font-face {
+    font-family: "Hermit";
+    src: url(/fonts/Hermit-Regular.woff2) format("woff");
+}
+
+#left {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+}
+
+.wrapper {
+   flex-flow: row wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   height: 100%;
+   margin: auto;
+}
+
+.item {
+  width: 400px;
+  padding: 30px 40px;
+}
+
+@media all and (max-width: 960px) {
+  #left {
+    align-items: center;
+  }
+
+  .item {
+    text-align: center;
+    padding: 10px 40px;
+  }
+
+  #logo {
+    text-align: center;
+  }
+}
