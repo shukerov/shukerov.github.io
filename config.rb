@@ -12,9 +12,12 @@ set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :syntax
 
+# activating relative links
+set :relative_links, true
+
 # activating blogs
 activate :blog do |blog|
-  blog.prefix = "/myblog/blog"
+  blog.prefix = "/blog"
   blog.layout = "article_layout"
 end
 

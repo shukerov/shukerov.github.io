@@ -26,9 +26,9 @@
   <body>
     <div class="site">
       <div id="nav">
-        <a href="/" class="nav_btn">Home</a>
-        <a href="/blog" class="nav_btn">Blog</a>
-        <a href="/projects" class="nav_btn">Projects</a>
+        <%= link_to 'Home', "/index.html" %>
+        <%= link_to 'Blog', "/blog.html" %>
+        <%= link_to 'Projects', "/projects.html" %>
       </div>
       <main>
         <%= yield %>
