@@ -1,11 +1,22 @@
 <% wrap_layout :layout do %>
-	<div class="post">
-		<h1><%= current_article.title %></h1>
-   		<%= yield %>
-   	</div>
-	<div id="bottom-menu">
-		<a href="#top">Top</a>
-		|
-		<%= link_to 'Back', '/blog.html' %>
+  <div class="container">
+  <div class="post-header">
+    <h1><%= current_article.title %></h1>
+    <div class="author"> Stoyan Shukerov </div> - 
+    <%= current_article.date.strftime("%B %d, %Y") %>
+    <div class="tag-list">
+      <% current_article.tags.each do |tag|%>
+        <li><%= tag %></li>
+      <% end %>
+    </div>
+  </div>
+  <div class="post-body">
+      <%= yield %>
+    </div>
+  <div id="bottom-menu">
+    <a href="#top">Top</a>
+    |
+    <%= link_to 'Back', '/blog.html' %>
    </div>
+ </div>
 <% end %>

@@ -1,7 +1,7 @@
 ---
 title: Ruby Development Windows 10
 date: 2018/03/22
-tags: bash, windows 10, rbenv, ubuntu, ruby, windows, blog
+tags: bash,rbenv,ubuntu,ruby,windows
 ---
 
 Dual booting my machine has been the way to go for me for the last year, but switching between ubuntu and windows 10 has become pretty tiring. I love ubuntu, but it doesn't
