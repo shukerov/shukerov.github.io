@@ -3,10 +3,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# general configuration
-activate :directory_indexes
-activate :livereload
-
 # markdown and syntax highlighting
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
@@ -18,8 +14,13 @@ set :relative_links, true
 # activating blogs
 activate :blog do |blog|
   blog.prefix = "/blog"
+  blog.permalink = "{title}"
   blog.layout = "article_layout"
 end
+
+# general configuration
+activate :directory_indexes
+activate :livereload
 
 # Build-specific configuration
 configure :build do
