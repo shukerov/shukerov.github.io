@@ -13,12 +13,12 @@ set :relative_links, true
 
 # activating blogs
 activate :blog do |blog|
-  blog.prefix = "/blog"
+  blog.prefix = "blog"
   blog.permalink = "{title}"
   blog.layout = "article_layout"
 end
 
-# general configuration
+# general configuration	
 activate :directory_indexes
 activate :livereload
 
@@ -28,5 +28,4 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets # Use relative URLs
   set :build_dir, 'public'
-  set :base_url, "/myblog" # baseurl for GitLab Pages (project name) - leave empty if you're building a user/group website
 end
