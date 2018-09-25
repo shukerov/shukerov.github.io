@@ -1,14 +1,23 @@
-.highlight { 
+code {
+  background-color: #eee8d5;
+  padding: 3px 5px;
+}
+
+.highlight {
    background-color: #eee8d5;
    color: #586e75;
-   overflow-x: auto; 
+   overflow-x: auto;
    border: 1px solid #ddd;
    border-radius: 7px;
    padding: 0px 7px;
-   
+
    pre {
       border: none;
    }
+
+   code {
+    background-color: #eee8d5;
+  }
 }
 
 .highlight .c { color: #93a1a1 } /* Comment */

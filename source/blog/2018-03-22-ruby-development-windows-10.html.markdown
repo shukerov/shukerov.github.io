@@ -6,7 +6,7 @@ tags: bash,rbenv,ubuntu,ruby
 
 This blog post will cover how to set up ruby with rbenv to manage versions in bash on Ubuntu. Note that this also works for the Ubuntu subsystem provided on windows. By installing rbenv you will be able to have application-specific Ruby versions. You will be able to quickly switch between them, and avoid a messy ruby environment. Another popular solution to the same problems is rvm.
 
-Before we get started I would like to note that the source for this blogpost is the rbenv github repository.
+Before we get started I would like to note that the [source](https://github.com/rbenv/rbenv) for this blogpost is the rbenv github repository.
 
 #### Lets get started!
 
