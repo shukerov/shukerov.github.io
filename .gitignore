@@ -17,7 +17,9 @@
 # Ignore .DS_store file
 .DS_Store
 
-# ignore bundle
+# Ignore ruby things
 /vendor
+Gemfile.lock
 
+# ignore sublime project files
 /*.sublime*

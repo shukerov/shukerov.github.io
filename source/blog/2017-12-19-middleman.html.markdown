@@ -1,5 +1,5 @@
 ---
-title: My Middleman Blog Post
+title: A Middleman Blog Post Test
 date: 2017/12/19
 tags: blogging, middleman, hello, world
 ---
