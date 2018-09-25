@@ -30,7 +30,7 @@ cd ~/.rbenv && src/configure && make -C src
 
 Next we will add the rbenv folder to the $PATH variable of the system. Note that I am using .mybashrc, depending on your setup you might want to echo it in your .bashrc or .bash_profile.
 
-```bash
+```bash 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.mybashrc
 echo 'eval "$(rbenv init -)"' >> ~/.mybashrc
 ```
