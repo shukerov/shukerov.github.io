@@ -173,7 +173,7 @@ body {
     src: url(/fonts/Hermit-Regular.woff2) format("woff");
 }
 
-#left {
+.left {
   display: flex;
   align-items: flex-end;
   flex-flow: column nowrap;
@@ -194,8 +194,57 @@ body {
   padding: 30px 40px;
 }
 
-@media all and (max-width: 1200px) {
-  #left {
+.note {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 750px;
+  //height: 100%;
+
+  img {
+    max-width:100%;
+    /*width: 600px;
+    height: 400px;*/
+  }
+}
+
+.btn {
+
+}
+
+.project {
+  margin-bottom: 25px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #eee8d5;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    text-decoration: none;
+    color: #b58900;
+  }
+
+  #bottom-menu {
+    max-width: 400px;
+    text-align: center;
+    //margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 1180px) {
+  .left {
     align-items: center;
   }
 
