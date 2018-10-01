@@ -5,7 +5,7 @@ page '/*.txt', layout: false
 
 # markdown and syntax highlighting
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
 activate :syntax
 
 # activating relative links
@@ -16,9 +16,10 @@ activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = "{title}"
   blog.layout = "article_layout"
+  #blog.summary_separator = "/[:comment] # (END OF SUMMARY)"
 end
 
-# general configuration	
+# general configuration
 activate :directory_indexes
 activate :livereload
 
