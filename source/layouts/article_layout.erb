@@ -1,8 +1,8 @@
 <% wrap_layout :layout do %>
-  <div class="container">
+  <div class="article-container">
     <div class="post-header">
       <h1><%= current_article.title %></h1>
-      <div class="author"> Stoyan Shukerov </div> - 
+      <div class="author"> Stoyan Shukerov </div> -
       <%= current_article.date.strftime("%B %d, %Y") %>
       <div class="tag-list">
         <% current_article.tags.each do |tag|%>
