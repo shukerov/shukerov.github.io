@@ -5,7 +5,7 @@ page '/*.txt', layout: false
 
 # markdown and syntax highlighting
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :with_toc_data => true, :tables=> true
 activate :syntax
 
 # activating relative links

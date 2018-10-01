@@ -13,7 +13,7 @@ Use these links to skip to the section you are intersted in:
 * [Installation](#installation-first)
 * [Making Sublime the Default Text Editor](#sublime-default-te)
 * [My Favorite Packages](#my-favorite-packages)
-* [Handy Shortcuts](#handy-shortcuts)
+* [Handy Shortcuts](#shortcuts-cheatsheet)
 
 #### Installation First
 Note that the following installation is for Debian based system. First we add the GPG and add the apt repository. Open up your Terminal (`Ctrl + Alt + T`) and type: 
@@ -66,6 +66,16 @@ Here is a list of some of my frequently used packages:
 Below you can see a picture of the final result.
 ![Sublime Screenshot](2018-10-01-setting-up-sublime-the-way-i-like-it/pic1.png)
 
-#### Handy Shortcuts 
- 
-Shortcuts will be added soon.
+#### Shortcuts Cheatsheet
+
+* `Ctrl + D` -- Make a selection and then press combo to grab next occurence of the given selection
+* `Ctrl + K` -- Ignores the current selection after Ctrl + D (this lets you skip certain occurences)
+* `Ctrl + H` -- Replace Things
+* `Ctrl + K  + U` -- Convert Selection to upper case
+* `Ctrl + K  + L` -- Convert Selection to lower case
+* `Ctrl + Shift + F` -- Replace or Find Across multiple files
+* `Alt + Shift` -- Extend Cursor
+* `Alt + <Number>` -- Select a tab, where number corresponds to the tab you want to open
+* `Shift + Alt + <Number>` -- Split sublime into <number> of work panes
+* `Shift + Alt + Enter` -- Maximize focuse work pane (shortcut from MaxPane package)
+* `Ctrl + <Number>` -- Select a working pane
