@@ -8,7 +8,7 @@ In this blog post I will go over how I set up Sublime Text 3 for development thi
 
 Sublime has been the text editor I have been using for at least 2 years now, and it has always got the job done. While I am very happy with it, I will soon give a shot to VSCode. Why? Its good to change things up, and I hear a lot of good things about VSCode. Also I am getting tired of clicking cancel on the Sublime purchase pop-ups, and $80 is a steep price to pay for a poor college student.
 
-Use these links to skip to the section you are intersted in:
+Use these links to skip to the section you are interested in:
 
 * [Installation](#installation-first)
 * [Making Sublime the Default Text Editor](#sublime-default-te)
@@ -22,7 +22,7 @@ Note that the following installation is for Debian based system. First we add th
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 ```
 
-Add the stable apt repo:
+Add the stable apt repository:
 
 ```bash
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -34,7 +34,7 @@ Update your apt sources and install Sublime Text
 sudo apt-get update
 sudo apt-get install sublime-text
 ```
-You should now have succesfully installed Sublime!
+You should now have successfully installed Sublime!
 
 #### Sublime Default TE
 If Sublime was installed correctly then the following command should succeed.
@@ -68,8 +68,8 @@ Below you can see a picture of the final result.
 
 #### Shortcuts Cheatsheet
 
-* `Ctrl + D` -- Make a selection and then press combo to grab next occurence of the given selection.
-* `Ctrl + K` -- Ignores the current selection after Ctrl + D (this lets you skip certain occurences).
+* `Ctrl + D` -- Make a selection and then press combo to grab next occurrence of the given selection.
+* `Ctrl + K` -- Ignores the current selection after Ctrl + D (this lets you skip certain occurrences).
 * `Ctrl + H` -- Replace Things.
 * `Ctrl + K + B` -- Hide sidebar hotkey, awesome when all you want to see is code!.
 * `Ctrl + K  + U` -- Convert Selection to upper case.
@@ -78,5 +78,5 @@ Below you can see a picture of the final result.
 * `Alt + Shift` -- Extend Cursor.
 * `Alt + <Number>` -- Select a tab, where number corresponds to the tab you want to open.
 * `Shift + Alt + <Number>` -- Split sublime into <number> of work panes.
-* `Shift + Alt + Enter` -- Maximize focuse work pane (shortcut from MaxPane package).
+* `Shift + Alt + Enter` -- Maximize focus work pane (shortcut from MaxPane package).
 * `Ctrl + <Number>` -- Select a working pane.

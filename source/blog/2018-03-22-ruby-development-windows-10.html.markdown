@@ -13,7 +13,7 @@ Before we get started I would like to note that the [source](https://github.com/
 First we will install some dependencies for ruby (and ruby on rails):
 
 ```bash
-sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev
+sudo apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev nodejs imagemagick libmagickwand-dev
 ```
 
 Clone the repo provided above in your home directory by running the command below:
@@ -22,7 +22,7 @@ Clone the repo provided above in your home directory by running the command belo
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
-DIRECTLY FROM REPO: Optionally, try to compile dynamic bash extension to speed up rbenv. Don't worry if it fails; rbenv will still work normally:
+A suggestion form the rbenv documentation is to try to compile dynamic bash extension to speed up rbenv. In case the next command fails simply ignore it and keep going:
 
 ```bash
 cd ~/.rbenv && src/configure && make -C src
@@ -35,7 +35,7 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.mybashrc
 echo 'eval "$(rbenv init -)"' >> ~/.mybashrc
 ```
 
-Restart you shell to reaload .bashrc
+Restart you shell to reload .bashrc
 
 ```bash
 exec $SHELL
@@ -47,7 +47,7 @@ You can then execute a script called rbenv-doctor which checks that rbenv is set
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
 ```
 
-You will notice that there are currently no ruby versions installed. We will take care of next by installig a ruby build plugin for rbenv. Doing this will let us install ruby versions very easily by just running `rbenv install <ruby version here>`.
+You will notice that there are currently no ruby versions installed. We will take care of next by installing a ruby build plugin for rbenv. Doing this will let us install ruby versions very easily by just running `rbenv install <ruby version here>`.
 
 ```bash
 mkdir -p "$(rbenv root)"/plugins
@@ -98,5 +98,5 @@ I personally went with nodejs. You can download and install the LTS version of n
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install nodejs
+sudo apt-get install 
 ```
