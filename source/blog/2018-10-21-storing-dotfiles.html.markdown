@@ -1,18 +1,17 @@
 ---
 
-title: Storing Dotfiles
+title: Storing and Maintaining Dotfiles
 date: 2018-10-21 16:50 UTC
-tags: ubuntu, dotfiles, git, setup, dual-boot, git
-published: false
+tags: ubuntu, dotfiles, git, setup, dual-boot
 ---
 
-I have been looking for a way to store my dotfiles for some time now. The solution that I wanted was simple, elegant, easy to implement and yet flexible. I finally came across such a solution, it is the setup that `SneakyCobra` had on HackerNews, you can read his post [here](https://news.ycombinator.com/item?id=11071754). The only prerequisite is some basic git knowledge, and optionally a little bit of shell scripting experience.
+I have been looking for a way to store my dotfiles for some time now. The ideal solution was supposed to be simple, elegant, easy to implement and flexible. I finally came across such a solution, it is the setup that `SneakyCobra` had on HackerNews, you can read his post [here](https://news.ycombinator.com/item?id=11071754). The only prerequisite is some basic git knowledge, and optionally a little bit of shell scripting experience.
 
 This method of storing dotfiles consists of a bare git repository that lives in your home folder and a git alias that runs commands against that specific git repository.
 
 # First Time Setup
 ## Create the Git Repository for Dotfiles
-All configuration (dotfiles) will be stored in the git repo. The commands initialize the empty repo and creates an alias that I will use to store more dotfiles later.
+All configuration (dotfiles) will be stored in the git repo. The commands below initialize the empty repository and create an alias that will be used to store more dotfiles later.
 
 ```bash
 # initialize empty repo
@@ -47,17 +46,16 @@ config push --set-upstream origin master
 
 # Migrating Setup to a Different Machine
 
-Now that I have done the initial setup, its time to try it out in action. Since I have dual booted my machine I will try it out on bash for windows.
+Now that I have done the initial setup, its time to try it out in action. Since I have dual booted my machine I will try it out on the Linux subsystem for `Windows`.
 
 To make the process easier I have created a github snippet, to automatically complete migration steps. The shell script does the following:
 
-1. Clone the config repo created
-2. Checkout the content from to bare repository to my home directory
+1. Clones the config repo created.
+2. Checkouts the content from to bare repository to my home directory.
+  *Note that the checkout might fail, if there are some stock configuration files. The shell script creates a backup folder in that case.*
+3. Adds `.mybashrc` to the user bashrc (I keep those separate, to avoid unnecessary mixups).
 
-   Note: the checkout might fail, if there are some stock configuration files. The shell script creates a backup folder in that case.
-3. Add `.mybashrc` to the user bashrc (I keep those separate, to avoid unnecessary mixups)
-
-And are the contents of the script, credit goes to [Nicola Paolucci](https://www.durdn.com/):
+And here are the contents of the script, credit goes to [Nicola Paolucci](https://www.durdn.com/):
 
 ```bash
 git clone --bare git@github.com:shukerov/myconfig.git $HOME/.myconfig
@@ -79,6 +77,7 @@ echo -e "\nif [ -f ~/.mybashrc ]; then \n. ~/.mybashrc\nfi\n" >> .bashrc
 ```
 
 I run the script above with a curl command
+
 ```bash
 curl -Lks https://gist.githubusercontent.com/shukerov/d90c001818f90ac7e9b0fe31992bae3a/raw/5915a4cc2b93e3653279491c920331913afe5cb1/shukerov-config-install | /bin/bash
 ```
