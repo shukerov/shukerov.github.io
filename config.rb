@@ -31,5 +31,5 @@ configure :build do
   set :build_dir, 'public'
 end
 
-proxy "/.well-known/acme-challenge/qZil7vXarmad_7eXFfbnbFgFQ2cO9KX42ROaulUO3RI", "/static/letsencrypt_https.html", :layout => false
+proxy "/.well-known/acme-challenge/R1oSM6CSLXBxnq7hWIBfv4J2R6hUwVbs9jKDsp5pmVc", "/static/letsencrypt_https.html", :layout => false
 proxy "/.well-known/acme-challenge/clzQ74cq5MfJTAdz-psccXXbeMoLuH9xdsYWbch9Y-M", "/static/letsencrypt_www_https.html", :layout => false
