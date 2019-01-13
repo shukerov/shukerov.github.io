@@ -3,6 +3,7 @@
 @import "highlighting";
 @import "index";
 @import "blog";
+@import "projects";
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 img {
@@ -63,36 +64,3 @@ body {
     font-family: "Hermit";
     src: url(/fonts/Hermit-Regular.woff2) format("woff");
 }
-
-.note {
-  max-width: 750px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 1px solid #eee8d5;
-  padding: 0 1rem;
-
-  h2 {
-    text-decoration: none;
-    color: #b58900;
-  }
-
-  img {
-    width:100%;
-    margin: 1rem 0;
-  }
-
-  #bottom-menu {
-    max-width: 400px;
-    text-align: center;
-  }
-}
-
