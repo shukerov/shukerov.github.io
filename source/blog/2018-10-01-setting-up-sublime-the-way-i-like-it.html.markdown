@@ -64,7 +64,7 @@ Here is a list of some of my frequently used packages:
 * [Boxy Theme](https://packagecontrol.io/packages/Boxy%20Theme) -- the current theme I use is the `Boxy Tomorrow`. But this package lets you choose between several themes. I strongly recommend you check out the link and tweak the theme to your liking.
 
 Below you can see a picture of the final result.
-![Sublime Screenshot](2018-10-01-setting-up-sublime-the-way-i-like-it/pic1.png)
+![Sublime Screenshot](/images/blog/setting-up-sublime/result.png)
 
 #### Shortcuts Cheatsheet
 
