@@ -32,4 +32,4 @@ configure :build do
 end
 
 proxy "/.well-known/acme-challenge/R1oSM6CSLXBxnq7hWIBfv4J2R6hUwVbs9jKDsp5pmVc", "/static/letsencrypt_https.html", :layout => false
-proxy "/.well-known/acme-challenge/clzQ74cq5MfJTAdz-psccXXbeMoLuH9xdsYWbch9Y-M", "/static/letsencrypt_www_https.html", :layout => false
+proxy "/.well-known/acme-challenge/8KnL0IzbmaeBiEaeQNqvmNRz-yn7ZwdKiIjjMXJ8Fuw", "/static/letsencrypt_www_https.html", :layout => false
