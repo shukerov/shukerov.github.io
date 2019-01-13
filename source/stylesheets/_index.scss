@@ -1,0 +1,80 @@
+.icon {
+  width: 2.5em;
+  height: 3em;
+  margin: 0em 0.5em;
+}
+
+#icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0em;
+}
+
+#logo {
+  margin: 0px;
+  text-decoration: none;
+  font-size: 3em;
+  text-align: right;
+  line-height: 1;
+}
+
+#profile-pic {
+  width: 220px;
+  height: 300px;
+  margin-bottom: 1em;
+}
+
+#hello-text {
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
+#goodbye-text {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #b58900;
+}
+
+#highlight {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  color: #b58900;
+}
+
+.left {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+}
+
+.wrapper {
+   flex-flow: row wrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   height: 100%;
+   margin: auto;
+}
+
+.wrapper-item {
+  width: 500px;
+  padding: 30px 40px;
+}
+
+@media all and (max-width: 1180px) {
+  .left {
+    align-items: center;
+  }
+
+  .item {
+    text-align: center;
+    padding: 10px 40px;
+  }
+
+  #logo {
+    text-align: center;
+  }
+}
