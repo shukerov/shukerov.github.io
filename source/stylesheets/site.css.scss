@@ -38,7 +38,7 @@
 
   img {
 	  display: block;
-	}
+  }
 }
 
 // used in articles index page and individual articles
@@ -73,6 +73,11 @@
   padding: 0.5em 0em;
 }
 
+// global for all images
+img {
+    box-shadow: 5px 5px 5px grey;
+}
+
 a {
   text-decoration: none;
   color: #b58900;
@@ -90,6 +95,7 @@ h2 {
 // only used on blog index page
 h3 {
   opacity: 0.5;
+  line-height: 0.5;
   font-size: 1em;
   margin: 0;
 }
