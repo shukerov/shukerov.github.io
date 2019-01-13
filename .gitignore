@@ -27,3 +27,6 @@ Gemfile.lock
 
 # ignore vscode settings
 .vscode/settings.json
+
+# ignore vim swap files
+*.swp
