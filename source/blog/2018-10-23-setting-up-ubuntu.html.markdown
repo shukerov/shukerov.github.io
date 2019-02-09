@@ -57,7 +57,8 @@ published: false
 
 # Get the Yaru theme for Ubuntu:
 
-
+# Make vim default editor
+sudo update-alternatives --config editor (choose vim afterwards)
 # Dual boot tweaks:
 ##  FIX TIMES FOR DUAL BOOT:
   http://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/
