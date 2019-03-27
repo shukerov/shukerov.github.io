@@ -48,7 +48,8 @@ published: false
   sudo apt-get update
   sudo apt install vlc
 
-# Install discord:
+# Install others:
+  install bat from here - https://github.com/sharkdp/bat
   debian package online...
 
 # Install xclip:
