@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="theme-color" content="#b58900">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b58900">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon.png">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Ruby Development Ubuntu 18.04</title>
+
+    <link href='//fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111383764-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111383764-1');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <link href="../../stylesheets/site.css" rel="stylesheet" />
+    <script src="../../javascripts/all.js"></script>
+  </head>
+  <body>
+    <div class="site">
+      <div id="nav">
+        <a href="../../">Home</a>
+        <a href="../">Blog</a>
+        <a href="../../projects/">Projects</a>
+      </div>
+      <main>
+          <div class="article-container">
+    <div class="post-header">
+      <h1>Ruby Development Ubuntu 18.04</h1>
+      <div class="author"> Stoyan Shukerov </div> -
+      March 22, 2018
+      <div class="tag-list">
+          <li>bash</li>
+          <li>rbenv</li>
+          <li>ubuntu</li>
+          <li>ruby</li>
+      </div>
+    </div>
+    <div class="post-body">
+        <p>This blog post will cover how to set up ruby with rbenv to manage versions in bash on Ubuntu. Note that this also works for the Ubuntu subsystem provided on windows. By installing rbenv you will be able to have application-specific Ruby versions. You will be able to quickly switch between them, and avoid a messy ruby environment. Another popular solution to the same problems is rvm.</p>
+
+<p>Before we get started I would like to note that the <a href="https://github.com/rbenv/rbenv">source</a> for this blogpost is the rbenv github repository.</p>
+
+<h4 id="lets-get-started">Lets get started!</h4>
+
+<p>First we will install some dependencies for ruby (and ruby on rails):</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">sudo </span>apt-get install curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev nodejs imagemagick libmagickwand-dev
+</code></pre></div>
+<p>Clone the repo provided above in your home directory by running the command below:</p>
+<div class="highlight"><pre class="highlight shell"><code>git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+</code></pre></div>
+<p>A suggestion form the rbenv documentation is to try to compile dynamic bash extension to speed up rbenv. In case the next command fails simply ignore it and keep going:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">cd</span> ~/.rbenv <span class="o">&amp;&amp;</span> src/configure <span class="o">&amp;&amp;</span> make <span class="nt">-C</span> src
+</code></pre></div>
+<p>Next we will add the rbenv folder to the $PATH variable of the system. Note that I am using .mybashrc, depending on your setup you might want to echo it in your .bashrc or .bash_profile.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.mybashrc
+<span class="nb">echo</span> <span class="s1">'eval "$(rbenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.mybashrc
+</code></pre></div>
+<p>Restart you shell to reload .bashrc</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="nb">exec</span> <span class="nv">$SHELL</span>
+</code></pre></div>
+<p>You can then execute a script called rbenv-doctor which checks that rbenv is set properly. To do that just execute the following statement:</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-fsSL</span> https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+</code></pre></div>
+<p>You will notice that there are currently no ruby versions installed. We will take care of next by installing a ruby build plugin for rbenv. Doing this will let us install ruby versions very easily by just running <code>rbenv install &lt;ruby version here&gt;</code>.</p>
+<div class="highlight"><pre class="highlight shell"><code>mkdir <span class="nt">-p</span> <span class="s2">"</span><span class="k">$(</span>rbenv root<span class="k">)</span><span class="s2">"</span>/plugins
+git clone https://github.com/rbenv/ruby-build.git <span class="s2">"</span><span class="k">$(</span>rbenv root<span class="k">)</span><span class="s2">"</span>/plugins/ruby-build
+</code></pre></div>
+<p>Now we can proceed to installing ruby. I went with the latest ruby version but feel free to install the one you need:</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="c"># this command will list all available ruby versions</span>
+rbenv install <span class="nt">-l</span>
+
+<span class="c"># this command will install ruby 2.5.1</span>
+rbenv install 2.5.1
+</code></pre></div>
+<p>Set the system wide version of ruby by running the following command:</p>
+<div class="highlight"><pre class="highlight shell"><code>rbenv global 2.5.1
+</code></pre></div>
+<p>Check if everything went smoothly. If it did then the next command should yield 2.5.0</p>
+<div class="highlight"><pre class="highlight shell"><code>ruby <span class="nt">-v</span>
+</code></pre></div>
+<p>Install some global gems that we will need</p>
+<div class="highlight"><pre class="highlight shell"><code>gem install bundler
+gem install middleman
+gem install rails
+</code></pre></div>
+<p>To &ldquo;activate&rdquo; new gems run:</p>
+<div class="highlight"><pre class="highlight shell"><code>rbenv rehash
+</code></pre></div>
+<h4 id="additional-notes">Additional notes</h4>
+
+<p>If you plan to use middleman or ruby on rails you will need a javascript runtime. You can find a list of them <a href="https://github.com/rails/execjs">here</a>:</p>
+
+<p>I personally went with nodejs. You can download and install the LTS version of node by running:</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-sL</span> https://deb.nodesource.com/setup_8.x | <span class="nb">sudo</span> <span class="nt">-E</span> bash -
+<span class="nb">sudo </span>apt-get install 
+</code></pre></div>
+      </div>
+    <div id="bottom-menu">
+      <a href="#top">Top</a>
+      |
+      <a href="../">Back</a>
+    </div>
+ </div>
+
+      </main>
+      <div id="footer">
+        <p>2018 Shukerov</p>
+      </div>
+    </div>
+  </body>
+</html>

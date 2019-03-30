@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="theme-color" content="#b58900">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b58900">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon.png">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Storing and Maintaining Dotfiles</title>
+
+    <link href='//fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111383764-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111383764-1');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <link href="../../stylesheets/site.css" rel="stylesheet" />
+    <script src="../../javascripts/all.js"></script>
+  </head>
+  <body>
+    <div class="site">
+      <div id="nav">
+        <a href="../../">Home</a>
+        <a href="../">Blog</a>
+        <a href="../../projects/">Projects</a>
+      </div>
+      <main>
+          <div class="article-container">
+    <div class="post-header">
+      <h1>Storing and Maintaining Dotfiles</h1>
+      <div class="author"> Stoyan Shukerov </div> -
+      October 21, 2018
+      <div class="tag-list">
+          <li>ubuntu</li>
+          <li>dotfiles</li>
+          <li>git</li>
+          <li>setup</li>
+          <li>dual-boot</li>
+      </div>
+    </div>
+    <div class="post-body">
+        <p>I have been looking for a way to store my dotfiles for some time now. The ideal solution was supposed to be simple, elegant, easy to implement and flexible. I finally came across such a solution, it is the setup that <code>SneakyCobra</code> had on HackerNews, you can read his post <a href="https://news.ycombinator.com/item?id=11071754">here</a>. The only prerequisite is some basic git knowledge, and optionally a little bit of shell scripting experience.</p>
+
+<p>This method of storing dotfiles consists of a bare git repository that lives in your home folder and a git alias that runs commands against that specific git repository.</p>
+
+<h1 id="first-time-setup">First Time Setup</h1>
+
+<h2 id="create-the-git-repository-for-dotfiles">Create the Git Repository for Dotfiles</h2>
+
+<p>All configuration (dotfiles) will be stored in the git repo. The commands below initialize the empty repository and create an alias that will be used to store more dotfiles later.</p>
+<div class="highlight"><pre class="highlight shell"><code><span class="c"># initialize empty repo</span>
+git init <span class="nt">--bare</span> <span class="nv">$HOME</span>/.myconfig
+
+<span class="c"># NOTE: redirect in my case is to .bash_aliases. This will most likely be different for you</span>
+<span class="c"># adds config alias to your existing base of aliases</span>
+<span class="nb">echo</span> <span class="s2">"alias config='/usr/bin/git --git-dir=</span><span class="nv">$HOME</span><span class="s2">/.myconfig/ --work-tree=</span><span class="nv">$HOME</span><span class="s2">'"</span> <span class="o">&gt;&gt;</span> <span class="nv">$HOME</span>/.bash_aliases
+
+<span class="c"># make sure your repo ignores untracked files</span>
+config config <span class="nt">--local</span> status.showUntrackedFiles no
+</code></pre></div>
+<h2 id="adding-your-dotfiles">Adding Your Dotfiles</h2>
+
+<p>Next I will add my dotfiles to the repo that was just created. If you are familiar with git then you already know what to do, I added and commited the following files</p>
+<div class="highlight"><pre class="highlight shell"><code>config add .vimrc
+config add .bash_aliases
+config add .mybashrc
+config add .tmux.conf
+config add .gitconfig
+config commit <span class="nt">-m</span> <span class="s1">'Initializing repository. Add config files.'</span>
+</code></pre></div>
+<p>Create a repository on your favorite git hosting service, point your repo to it and then push your changes. </p>
+<div class="highlight"><pre class="highlight shell"><code>config remote add origin &lt;yourgithostinglink&gt;
+config push <span class="nt">--set-upstream</span> origin master
+</code></pre></div>
+<h1 id="migrating-setup-to-a-different-machine">Migrating Setup to a Different Machine</h1>
+
+<p>Now that I have done the initial setup, its time to try it out in action. Since I have dual booted my machine I will try it out on the Linux subsystem for <code>Windows</code>.</p>
+
+<p>To make the process easier I have created a github snippet, to automatically complete migration steps. The shell script does the following:</p>
+
+<ol>
+<li>Clones the config repo created.</li>
+<li>Checkouts the content from to bare repository to my home directory.
+<em>Note that the checkout might fail, if there are some stock configuration files. The shell script creates a backup folder in that case.</em></li>
+<li>Adds <code>.mybashrc</code> to the user bashrc (I keep those separate, to avoid unnecessary mixups).</li>
+</ol>
+
+<p>And here are the contents of the script, credit goes to <a href="https://www.durdn.com/">Nicola Paolucci</a>:</p>
+<div class="highlight"><pre class="highlight shell"><code>git clone <span class="nt">--bare</span> git@github.com:shukerov/myconfig.git <span class="nv">$HOME</span>/.myconfig
+<span class="k">function </span>config <span class="o">{</span>
+   /usr/bin/git <span class="nt">--git-dir</span><span class="o">=</span><span class="nv">$HOME</span>/.myconfig/ <span class="nt">--work-tree</span><span class="o">=</span><span class="nv">$HOME</span> <span class="nv">$@</span>
+<span class="o">}</span>
+config checkout
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="o">=</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"Checked out config."</span><span class="p">;</span>
+  <span class="k">else
+    </span><span class="nb">echo</span> <span class="s2">"Backing up pre-existing dot files."</span><span class="p">;</span>
+    mkdir <span class="nt">-p</span> .config-backup
+    config checkout 2&gt;&amp;1 | egrep <span class="s2">"</span><span class="se">\s</span><span class="s2">+</span><span class="se">\.</span><span class="s2">"</span> | awk <span class="o">{</span><span class="s1">'print $1'</span><span class="o">}</span> | xargs <span class="nt">-I</span><span class="o">{}</span> mv <span class="o">{}</span> .config-backup/<span class="o">{}</span>
+<span class="k">fi</span><span class="p">;</span>
+config checkout
+config config status.showUntrackedFiles no
+
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">if [ -f ~/.mybashrc ]; then </span><span class="se">\n</span><span class="s2">. ~/.mybashrc</span><span class="se">\n</span><span class="s2">fi</span><span class="se">\n</span><span class="s2">"</span> <span class="o">&gt;&gt;</span> .bashrc
+</code></pre></div>
+<p>I run the script above with a curl command</p>
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-Lks</span> https://gist.githubusercontent.com/shukerov/d90c001818f90ac7e9b0fe31992bae3a/raw/5915a4cc2b93e3653279491c920331913afe5cb1/shukerov-config-install | /bin/bash
+</code></pre></div>
+<p>Your dotfiles should now be successfully migrated!</p>
+
+      </div>
+    <div id="bottom-menu">
+      <a href="#top">Top</a>
+      |
+      <a href="../">Back</a>
+    </div>
+ </div>
+
+      </main>
+      <div id="footer">
+        <p>2018 Shukerov</p>
+      </div>
+    </div>
+  </body>
+</html>
