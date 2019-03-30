@@ -21,8 +21,7 @@
 /vendor
 Gemfile.lock
 
-# ignore sublime project files
-/*.sublime*
+public/
 /source/images/temp/
 
 # ignore vscode settings
