@@ -19,6 +19,12 @@ activate :blog do |blog|
   #blog.summary_separator = "/[:comment] # (END OF SUMMARY)"
 end
 
+# deployment with middleman-deploy gem
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = 'master'
+end
+
 # general configuration
 activate :directory_indexes
 activate :livereload
