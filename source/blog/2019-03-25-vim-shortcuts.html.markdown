@@ -18,6 +18,7 @@ hs -> for hunk stage. Staging just a part of a file. Need to check if you need p
 
 Cool plugins
 traces.vim (highlights and edits search and replace as you go baby)
+rhysd/clever-f
 
 eugen0329/vim-esearch (searches through entire project)
    * <leader> ff -> starts search
