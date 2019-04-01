@@ -115,10 +115,14 @@ sudo update-alternatives --config editor (choose vim afterwards)
   If you get an error for "too open permissions", run the following command to change them
   `chmod 400 ~/.ssh/id_rsa`
 
-# Alt and tab fastswitch:
-## Where to get the extension:
-  https://extensions.gnome.org/extension/1317/alt-tab-switcher-popup-delay-removal/
-## Loading gnome extensions manually:
-  https://itsfoss.com/gnome-shell-extensions/
-
-
+# Gnome Extensions:
+To manage extensions use https://extensions.gnome.org/
+You will need a few packages to get this working properly:
+```bash
+TODO
+```
+And here is list of extensions
+* Alt-Tab Switcher Popup Delay Removal  
+* Put Windows
+* Pixel Saver
+* Extended Gestures (note: currently only works on wayland)
