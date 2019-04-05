@@ -23,3 +23,14 @@ rhysd/clever-f
 eugen0329/vim-esearch (searches through entire project)
    * <leader> ff -> starts search
    * s and t to open the search in a new tab or a split respectively
+
+
+# Text objects
+iw - inner word
+aw - a word (includes a space)
+ip - inner paragraph
+ap - a paragraph (includes an empty line)
+i*), ', ", }* - inner parenthesis, single quote, double quote or brace
+it, at - inner tag, a tag (includes the open and closing tag)
+
+You can find some more information on text objects by typing ''':h text-objects''' in vim
