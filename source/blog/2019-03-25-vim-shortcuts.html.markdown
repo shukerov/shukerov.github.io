@@ -12,8 +12,6 @@ This is a blog about vim shortucts.
 
 gqq -> single line to multiple given you setcolumn width thingie
 gq -> same a as above but just for a selection
-hs -> for hunk stage. Staging just a part of a file. Need to check if you need plugins to get this
-      actually runnning
 
 
 Cool plugins
@@ -34,3 +32,26 @@ i*), ', ", }* - inner parenthesis, single quote, double quote or brace
 it, at - inner tag, a tag (includes the open and closing tag)
 
 You can find some more information on text objects by typing ''':h text-objects''' in vim
+
+# Just handy command
+In normal mode with cursor over a number press <C-a> to incerement that number, use <C-x> to decrement (except i have this overwritten ;( ). I fucking love vim.
+
+# Registers
+To reapeat last colon command use @:, and @@ for further repeats
+@ just accesses a vim register! In the case above the column register is called.
+To view the contents of register type `:reg`
+
+# Not sure where this should go
+https://vi.stackexchange.com/questions/6693/replace-current-selection-and-all-identical-occurrences-in-a-file
+
+# Time traveling
+:earlier 2m -> goes back in time 2 minutes. WOW
+
+# Plugin blogging
+Note that this could be its own blog
+
+## Gitgutter
+
+Use `[c` and `]c` to jump to changes within a file.
+Use `<leader>hs` for staging a hunk, aka stage just a part of the file.
+Use `<leader>hp` to view changes of the hunk you are on
