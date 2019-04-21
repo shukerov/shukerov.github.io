@@ -11,4 +11,18 @@ I will record some UNIX commands and useful things here.
 
 # Environment Variables
 * to view them use `printenv`. Might be useful to pipe the output into less`printenv | less`
-* to set an environment variable `export var=value`. For example `export TMP=~/mytempfolder
+* to set an environment variable `export var=value`. For example `export TMP=~/mytempfolder`
+
+
+# Stuff I always forget
+
+File permissions, this picture clears up everything for me:
+
+![UNIX permissions] (/images/blog/unix-fu/unix-permissions.jpeg)
+
+Owner, then group then other users. The first character, shows if its a directory or not.
+If you want to change permissions there are several ways to go about it:
+
+```bash
+chmod g-w <filename>
+```
