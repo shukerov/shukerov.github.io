@@ -1,0 +1,14 @@
+---
+
+title: unix-fu
+date: 2019-04-21 16:57 UTC
+tags: 
+published: false
+
+---
+
+I will record some UNIX commands and useful things here.
+
+# Environment Variables
+* to view them use `printenv`. Might be useful to pipe the output into less`printenv | less`
+* to set an environment variable `export var=value`. For example `export TMP=~/mytempfolder
