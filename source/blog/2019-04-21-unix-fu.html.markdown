@@ -13,6 +13,8 @@ I will record some UNIX commands and useful things here.
 * to view them use `printenv`. Might be useful to pipe the output into less`printenv | less`
 * to set an environment variable `export var=value`. For example `export TMP=~/mytempfolder`
 
+# Handy commands
+`tree -C <dir-name>` to print out the contents of a directory in a very clear way.
 
 # Stuff I always forget
 
