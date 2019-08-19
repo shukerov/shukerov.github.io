@@ -46,3 +46,14 @@ The next step is rebasing the master branch onto the ammended commit. What this 
 To rebase I first copied the hash of the changed commit. Make sure you do this before rebasing to master, might be kind of hard to find the hash afterwards. Then checkout to master `git checkout master` and run `git rebase <hash of commit you copied>`. Fix the merge conflicts and you are donee!
 
 Alternatively you can use `rebase` with the `--onto` option, which I still haven't mastered.
+
+## Removing all untracked files
+Sometimes you just add files, and tests to a repo - just to try things out. With git having my back I am not scared to do so.
+
+Here are the commands that will clean up after the experiments:
+`git clean -n` will show untracked files that will be deleted. Git status really does a similar thing.
+`git clean -f` will delete the files shown from the command above.
+`git clean -fd` will delete files and directories
+`git clean -fX` will also remove ignored files
+`git clean -fx` remove ignored and non-ignored files
+
