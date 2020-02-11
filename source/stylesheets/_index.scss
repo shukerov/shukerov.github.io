@@ -1,3 +1,5 @@
+@import 'globalvariables';
+
 .icon {
   width: 2.5em;
   height: 3em;
@@ -15,12 +17,16 @@
   margin: 0px;
   text-decoration: none;
   font-size: 3em;
-  text-align: right;
   line-height: 1;
+  text-align: center;
+
+  @media screen and (min-width: $screen-xl-min) {
+    text-align: right;
+  }
 }
 
 #profile-pic {
-  height: 500px;
+  height: 450px;
   margin-bottom: 1em;
 }
 
@@ -57,35 +63,36 @@
 
 .left {
   display: flex;
-  align-items: flex-end;
   flex-flow: column nowrap;
+  align-items: center;
+
+  @media screen and (min-width: $screen-xl-min) {
+    align-items: flex-end;
+    justify-self: end;
+  }
 }
 
 .wrapper {
-   flex-flow: row wrap;
-   display: flex;
-   justify-content: center;
-   align-content: center;
-   height: 100%;
-   margin: auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+
+  @media screen and (min-width: $screen-xl-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .wrapper-item {
-  width: 500px;
-  padding: 30px 40px;
-}
-
-@media all and (max-width: 1180px) {
-  .left {
-    align-items: center;
-  }
-
-  .item {
-    text-align: center;
-    padding: 10px 40px;
-  }
-
-  #logo {
-    text-align: center;
+  max-width: 65%;
+  margin: 30px auto;
+  @media screen and (min-width: $screen-xl-min) {
+    margin: 30px 40px;
   }
 }
+
+.item {
+  text-align: center;
+  padding: 10px 40px;
+}
+

@@ -54,21 +54,19 @@ h4 {
 .article-container {
   display: flex;
   flex-direction: column;
-  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;
+  max-width: 700px;
+  padding: 0 1.5rem;
+
+  @media screen and (min-width: $screen-xl-min) {
+    padding: 0 1rem;
+    max-width: 850px;
+  }
 
   img {
     width:100%;
     margin: 1rem 0;
-  }
-}
-
-@media all and (max-width: 1180px) {
-  .article-container {
-    max-width: 700px;
-    padding: 0 1.5rem;
   }
 }
 
