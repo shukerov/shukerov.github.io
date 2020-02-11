@@ -20,7 +20,8 @@
   }
 
   svg:hover {
-    color: $link-color;
+    color: darken($link-color, 25%);
+    fill: lighten($link-color, 5%);
   }
 }
 
