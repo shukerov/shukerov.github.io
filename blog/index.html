@@ -22,17 +22,15 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <link href="../stylesheets/site.css" rel="stylesheet" />
-    <script src="../javascripts/all.js"></script>
   </head>
   <body>
     <div class="site">
       <div id="nav">
-        <a href="../">Home</a>
-        <a href="./">Blog</a>
-        <a href="../projects/">Projects</a>
+        <a href="../" id="nav-item-home">Home</a>
+        <a href="./" id="nav-item-blog">Blog</a>
+        <a href="../projects/" id="nav-item-projects">Projects</a>
       </div>
-      <main>
-        
+      <main class='blogs' id='blog'>
   <article class="article-container">
     <h2><a href="/blog/storing-dotfiles/">Storing and Maintaining Dotfiles</a></h2>
     <h3><time>21st Oct 2018</time></h3>
@@ -54,11 +52,12 @@
     <p>So I guess I can start writing, and doing some blogging already. The first blog would be me figuring
 out how to deal with middleman and configure it to do syntax highlighting, as well as use partials to format...</p>
   </article>
+</main>
 
-      </main>
       <div id="footer">
-        <p>2018 Shukerov</p>
+        <p>2020 Shukerov</p>
       </div>
     </div>
   </body>
+  <script src="../javascripts/all.js"></script>
 </html>

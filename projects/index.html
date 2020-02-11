@@ -22,29 +22,28 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <link href="../stylesheets/site.css" rel="stylesheet" />
-    <script src="../javascripts/all.js"></script>
   </head>
   <body>
     <div class="site">
       <div id="nav">
-        <a href="../">Home</a>
-        <a href="../blog/">Blog</a>
-        <a href="./">Projects</a>
+        <a href="../" id="nav-item-home">Home</a>
+        <a href="../blog/" id="nav-item-blog">Blog</a>
+        <a href="./" id="nav-item-projects">Projects</a>
       </div>
-      <main>
-        <div class="project">
+      <main class='projects' id='projects'>
+<div class="project">
   <h2>Data For Me</h2>
-  <a href="https://dataforme.xyz">
-    <img src="../images/projects/dataforme.jpg" alt="Dataforme" /> 
+  <a href="https://dataforme.xyz" target='_blank'>
+    <img src="../images/projects/dataforme.png" alt="Dataforme" /> 
   </a>
   <div class="description">
-    <p>A tool that analyzes personal data offline. Dataforme is my senior project, and still a work in progress. The idea behind it is that everyone should be able to analyze, and gain insights from their personal data, without giving it away to anyone. The <code><a href='https://github.com/shukerov/dataforme/'>code</a></code> is Open Source.
+    <p>A tool that analyzes personal data offline. Dataforme is my senior project, and still a work in progress. The idea behind it is that everyone should be able to analyze, and gain insights from their personal data, without giving it away to anyone. The <code><a href='https://github.com/shukerov/dataforme/' target='_blank'>code</a></code> is Open Source.
     </p>
   </div>
 </div>
 <div class="project">
   <h2>Carter Brown Law</h2>
-  <a href='https://carterbrownlaw.com'>
+  <a href='https://carterbrownlaw.com' target='_blank'>
     <img src="../images/projects/carterbrownlaw.jpg" alt="Carterbrownlaw" /> 
   </a>
   <div class="description">
@@ -75,11 +74,12 @@
 <div id="bottom-menu">
   <a href="#top">To the top!</a>
 </div>
+</main>
 
-      </main>
       <div id="footer">
-        <p>2018 Shukerov</p>
+        <p>2020 Shukerov</p>
       </div>
     </div>
   </body>
+  <script src="../javascripts/all.js"></script>
 </html>

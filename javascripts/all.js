@@ -1,0 +1,1 @@
+function markActiveTab(){const e=document.getElementsByTagName("main")[0],t="nav-item-"+e.id;document.getElementById(t).classList.add("nav-active-item")}console.log("Hi \ud83d\udc4b."),console.log("Find the source code for this website here:"),console.log("https://github.com/shukerov/shukerov.github.io"),markActiveTab();
