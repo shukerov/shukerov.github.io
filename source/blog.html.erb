@@ -1,4 +1,4 @@
-
+<main class='blogs' id='blog'>
 <% blog.articles.each do |article| %>
   <article class="article-container">
     <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
@@ -6,3 +6,4 @@
     <%= article.summary(210, '...') %>
   </article>
 <% end %>
+</main>

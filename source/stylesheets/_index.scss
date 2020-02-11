@@ -1,4 +1,11 @@
+@import "mixins";
 @import 'globalvariables';
+
+.index {
+  a {
+    @include fancy_underline;
+  }
+}
 
 .icon {
   width: 2.5em;
