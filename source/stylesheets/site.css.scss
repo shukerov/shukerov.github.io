@@ -52,6 +52,10 @@ body {
   }
 }
 
+.nav-active-item {
+  border-bottom: 2px solid $link-color;
+}
+
 #footer {
    display: flex;
    justify-content: center;
