@@ -7,7 +7,7 @@ markActiveTab();
 // active tab
 function markActiveTab() {
   const mainContent = document.getElementsByTagName('main')[0];
-  const activeNavItemName = `nav-item-${mainContent.id}`;
+  const activeNavItemName = 'nav-item-' + mainContent.id;
   const activeNavItem = document.getElementById(activeNavItemName);
 
   activeNavItem.classList.add('nav-active-item');
