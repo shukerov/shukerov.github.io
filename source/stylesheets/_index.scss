@@ -103,8 +103,13 @@
 }
 
 .wrapper-item {
-  max-width: 65%;
+  max-width: 90%;
   margin: 30px auto;
+
+  @media screen and (min-width: $screen-md-min) {
+    max-width: 65%;
+  }
+
   @media screen and (min-width: $screen-xl-min) {
     margin: 30px 40px;
   }
