@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <meta name="theme-color" content="#b58900">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#b58900">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/icons/favicon.png">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Vim Things</title>
+
+    <link href='//fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111383764-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111383764-1');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <link href="../../stylesheets/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site">
+      <div id="nav">
+        <a href="../../" id="nav-item-home">Home</a>
+        <a href="../" id="nav-item-blog">Blog</a>
+        <a href="../../projects/" id="nav-item-projects">Projects</a>
+      </div>
+      <main class='blogs' id='blog'>
+  <div class="article-container">
+    <div class="post-header">
+      <h1>Vim Things</h1>
+      <div class="author"> Stoyan Shukerov </div> -
+      March 25, 2019
+      <div class="tag-list">
+          <li>vim</li>
+          <li>love</li>
+          <li>goodness</li>
+          <li>development</li>
+          <li>texteditor</li>
+          <li>shortcuts</li>
+      </div>
+    </div>
+    <div class="post-body">
+        <p>I have taken up the challenge to be better at Vim. I love Vim, and the productivity boost it has given me. It honestly just gets me excited about writing code every day.
+Taking up Vim however also means that I am taking up the challenge to endlessly configure and tweak it.</p>
+
+<p>This blog post is by no means a comprehensive guide or anything like that, it is more of a place where I dump vim commands, and tricks I found useful at some point.</p>
+
+<p>Check out my <a href="https://github.com/shukerov/myconfig/blob/master/.vimrc">vimrc</a>.</p>
+
+<p>Use the links below to jump to different sections:</p>
+
+<ul>
+<li><a href="#random-vim-tips-and-tricks">Random Vim Tips &amp; Tricks</a>
+
+<ul>
+<li><a href="#useful-and-simple-commands">Useful and simple commands</a></li>
+<li><a href="#spellchecking">Spellchecking</a></li>
+<li><a href="#registers">Registers</a></li>
+<li><a href="#text-objects">Text Objects</a></li>
+<li><a href="#macros">Macros</a></li>
+<li><a href="#others">Others</a></li>
+</ul></li>
+<li><a href="#plugins">Plugins</a>
+
+<ul>
+<li><a href="#my-favorites">My Favorites</a></li>
+<li><a href="#plugin-tips-and-tricks">Plugin Tips &amp; Tricks</a></li>
+</ul></li>
+</ul>
+
+<h1 id="random-vim-tips-and-tricks">Random Vim Tips and Tricks</h1>
+
+<h4 id="useful-and-simple-commands">Useful and simple commands</h4>
+
+<ul>
+<li><code>&lt;C-a&gt;</code> &amp; <code>&lt;C-x&gt;</code> &ndash; increment and respectively decrement a number on the line, your cursor is on</li>
+<li><code>:earlier 2m</code> &ndash; is basically time travel. This specific command takes you back in time 2 minutes</li>
+<li><code>gx</code> &ndash; when your cursor is over a link, opens the link in your browser</li>
+<li><code>gqq</code> &ndash; break up single line to multiple based on the column width you have set</li>
+<li><code>gq</code> &ndash; same a as above but just for a selection of lines</li>
+</ul>
+
+<h4 id="spellchecking">Spellchecking</h4>
+
+<ul>
+<li><code>:setlocal spell</code> to turn on spellcheck</li>
+<li><code>:setlocal nospell</code> to turn off spellcheck</li>
+<li><code>]s</code> &amp; <code>[s</code> for jumping between misspelled words.</li>
+<li><code>z=</code> when cursor is over misspelled word will give you suggestions to fix it</li>
+</ul>
+
+<h4 id="registers">Registers</h4>
+
+<p>To repeat last vim command use <code>@:</code>, and for further repeats just hit <code>@@</code></p>
+
+<p>How does that work? Well in vim <code>@</code> just accesses a vim register. In the case above the column register is called.</p>
+
+<p>To view the contents of your registers type <code>:reg</code>.</p>
+
+<h4 id="text-objects">Text objects</h4>
+
+<p>Text objects are an awesome way to manipulate text. Combine them with the usual commands.
+You can find some more information on text objects by typing <code>:h text-objects</code>.</p>
+
+<ul>
+<li><code>iw</code> &ndash; inner word</li>
+<li><code>aw</code> &ndash; a word (includes a space)</li>
+<li><code>ip</code> &ndash; inner paragraph</li>
+<li><code>ap</code> &ndash; a paragraph (includes an empty line)</li>
+<li><code>i&lt;) &#39; &quot; } * &gt;</code> &ndash; inner parenthesis, single quote, double quote or brace</li>
+<li><code>it, at</code> &ndash; inner tag, a tag (includes the open and closing tag)</li>
+</ul>
+
+<h4 id="macros">Macros</h4>
+
+<p>Are awesome. Getting them wrong is not awesome. Here is a quick list showing how to edit your VIM macro.</p>
+
+<ul>
+<li>Type <code>:let @a=&#39;</code></li>
+<li>Press <code>Ctrl-R</code> <code>Ctrl-R</code> a to insert the current contents of register a (type <code>Ctrl-R</code> twice to insert the register exactly).</li>
+<li>Edit the text as required.</li>
+<li>Append an apostrophe (&lsquo;) to finish the command, and press <code>Enter</code>.</li>
+<li>Enter <code>:reg a</code> to view the new value in the register.</li>
+<li>Type <code>@a</code> to execute the contents of register <code>a</code>.</li>
+</ul>
+
+<h4 id="others">Others</h4>
+
+<p>Want to unwrap some html? Check out this handy regex:</p>
+<div class="highlight"><pre class="highlight plaintext"><code>:s/&lt;[^&gt;]*&gt;/\r&amp;\r/g
+:g/^$/d
+</code></pre></div>
+<p>Select everything and hit <code>=</code> to autoindent it.</p>
+
+<h1 id="plugins">Plugins</h1>
+
+<p>I am not a vim purist. I manage plugins with <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a>. Here are the most useful ones (for a full list check <a href="https://github.com/shukerov/myconfig/blob/master/.vimrc">vimrc</a>):</p>
+
+<h2 id="my-favorites">My Favorites</h2>
+
+<ul>
+<li><a href="https://github.com/ctrlpvim/ctrlp.vim"><code>ctrlp</code></a> &ndash; lets you search and open files easily with fuzzy find</li>
+<li><a href="https://github.com/markonm/traces.vim"><code>traces.vim</code></a> &ndash; highlights search and replace as you go</li>
+<li><a href="https://github.com/machakann/vim-highlightedyank"><code>vim-highlightedyank</code></a> &ndash; highlights when you yank something, a must have</li>
+<li><a href="https://github.com/eugen0329/vim-esearch"><code>vim-esearch</code></a> &ndash; lets you search through entire project. It also does search and replace in a &ldquo;sublime-like&rdquo; fashion</li>
+<li><a href="https://github.com/rhysd/committia.vim"><code>comittia.vim</code></a> &ndash; if you have vim set up as your default text editor for git, this will give you an awesome split</li>
+<li><a href="https://github.com/machakann/vim-highlightedyank"><code>nerdtree</code></a> &ndash; a very nice side menu, that shows directory trees. I toggle it with <code>&lt;leader&gt;kb</code>, so it doesn&rsquo;t take screen space while I code</li>
+<li><a href="https://github.com/neoclide/coc.nvim.git"><code>coc</code></a> &ndash; is an intellisense engine for Vim</li>
+</ul>
+
+<h2 id="plugin-tips-and-tricks">Plugin Tips and Tricks</h2>
+
+<p>Some useful tricks, specific to plugins.</p>
+
+<h4 id="ctrlp">CtrlP</h4>
+
+<p>Allows you to open multiple files. Search with <code>&lt;C-p&gt;</code> as usual.
+Then you can use <code>&lt;C-z&gt;</code> to mark files. Once marked press <code>&lt;C-o&gt;</code> to open them all.</p>
+
+<h4 id="nerdtree">NerdTree</h4>
+
+<p>Creating a new file and it doesn&rsquo;t pop up in <code>NerdTree</code>?</p>
+
+<p>Can be annoying, but all I have to do is press <code>r</code> over the directory where you expect you file.
+The <code>NerdTree</code> directory will refresh, showing you your &#39;lost&rsquo; file!</p>
+
+<h4 id="vimesearch">VimEsearch</h4>
+
+<ul>
+<li><code>&lt;leader&gt; ff</code> &ndash; starts your search</li>
+<li><code>s</code> &amp; <code>t</code> &ndash; opens a file in a new tab, or a split buffer respectively</li>
+<li><code>ESubstitute/word-to-replace/replacement-word/gc</code> &ndash; will search and  replace across multiple files after search.</li>
+</ul>
+
+      </div>
+    <div id="bottom-menu">
+      <a href="#top">Top</a>
+      |
+      <a href="../">Back</a>
+    </div>
+ </div>
+</main>
+
+      <div id="footer">
+        <p>2020 Shukerov</p>
+      </div>
+    </div>
+  </body>
+  <script src="../../javascripts/all.js"></script>
+</html>
