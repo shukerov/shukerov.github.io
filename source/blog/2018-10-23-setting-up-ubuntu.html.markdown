@@ -63,7 +63,7 @@ sudo update-alternatives --config editor (choose vim afterwards)
 # Dual boot tweaks:
 ##  FIX TIMES FOR DUAL BOOT:
   http://ubuntuhandbook.org/index.php/2016/05/time-differences-ubuntu-1604-windows-10/
-  You can do this by either switching windows to local time or ubuntu to local time. I chose ubuntu. One of the ways
+  You can do this by either switching windows to local time or Ubuntu to local time. I chose Ubuntu. One of the ways
   to achieve the time to local time is by running:
 
   `timedatectl set-local-rtc 1 --adjust-system-clock`

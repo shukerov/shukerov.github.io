@@ -77,6 +77,29 @@ Are awesome. Getting them wrong is not awesome. Here is a quick list showing how
 * Enter `:reg a` to view the new value in the register.
 * Type `@a` to execute the contents of register `a`.
 
+Macros can be of course executed on multiple or all lines. Here is how to do that:
+
+Execute the macro stored in register a on lines 5 through 10.
+
+`:5,10norm! @a`
+
+Execute the macro stored in register a on lines 5 through the end of the file.
+
+`:5,$norm! @a`
+
+Execute the macro stored in register a on all lines.
+
+`:%norm! @a`
+
+Execute the macro store in register a on all lines matching pattern.
+
+`:g/pattern/norm! @a`
+
+To execute the macro on visually selected lines, press V and the j or k until the desired region is selected. Then type :norm! @a and observe the that following input line is shown.
+
+`:'<,'>norm! @a`
+credit to `Judge Maygarden`. https://stackoverflow.com/users/1491/judge-maygarden
+
 #### Others
 
 Want to unwrap some html? Check out this handy regex:

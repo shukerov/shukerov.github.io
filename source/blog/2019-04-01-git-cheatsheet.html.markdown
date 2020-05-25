@@ -23,6 +23,11 @@ published: false
    clone a directory without using current as the base directory with `git clone <url> .`
    Can't even count how many times I have had to clone a repo and then move it down a directory.
 
+## Need to change a repo remote:
+* Just run `git remote set-url <new-repo-url>` and then `git push`. If everything went well things should succeed.
+If you have multiple branches tho you need to do some extra work: `git push origin refs/remotes/origin/*:refs/heads/*`
+https://stackoverflow.com/questions/33327966/get-repoint-to-new-remote-repository
+
 
 ## Interactive staging
 
@@ -47,6 +52,10 @@ To rebase I first copied the hash of the changed commit. Make sure you do this b
 
 Alternatively you can use `rebase` with the `--onto` option, which I still haven't mastered.
 
+## Updating something back in the past
+https://stackoverflow.com/questions/1186535/how-to-modify-a-specified-commit
+https://stackoverflow.com/questions/2719579/how-to-add-a-changed-file-to-an-older-not-last-commit-in-git
+
 ## Removing all untracked files
 Sometimes you just add files, and tests to a repo - just to try things out. With git having my back I am not scared to do so.
 
@@ -57,3 +66,10 @@ Here are the commands that will clean up after the experiments:
 `git clean -fX` will also remove ignored files
 `git clean -fx` remove ignored and non-ignored files
 
+
+git log --all --graph --decorate - grab the commit hash that you need
+git rebase -i <commit hash> - rebase interactively, choosing edit for the option
+git reset HEAD~ - which is similar to git reset .
+
+do your things here and then
+git rebase --continue

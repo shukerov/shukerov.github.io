@@ -25,3 +25,6 @@ docker stop <id of the container> # stops a running container identified by id
 docker compose up -d # runs all services specified by docker-compose.yml in the background (the -d option)
 docker compose down # stops all services specified by docker-compose.yml
 ```
+o
+`docker run <command>` - spins up a container and runs <command> on it
+`docker exec <command>` - targets a runnning container and runs <command> on it
